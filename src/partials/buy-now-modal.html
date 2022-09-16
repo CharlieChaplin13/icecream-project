@@ -1,1 +1,46 @@
 <div>Buy now modal</div>
+
+ <!-- <div class="backdrop is-hidden" data-modal> -->
+     <div class="modal-buy">
+       <button type="button" class="modal-button" data-modal-close>
+         <svg class="modal-icon" width="20" height="20">
+           <use href="./images/icons.svg#close-cross"></use>
+         </svg>
+       </button>
+       <p class="modal-window__title">Buy now</p>
+
+       <section class="products-range">
+         <ul class="products-range__list">
+             <li class="products-range__item">Ice Cream</li>
+             <li class="products-range__item">Ice Coffee</li>
+             <li class="products-range__item">Milkshake</li>
+         </ul>
+       </section>
+       <form class="modal-buy__form">
+         <div class="input-field">
+         <!-- <label class="input-title">Name</label> -->
+           <input 
+           type="text" 
+           name="username" 
+           class="input-form"
+           placeholder="Name">
+       </div>
+       <div class="input-field">
+         <!-- <label class="input-title">Phone</label> -->
+           <input
+           minlength="10"
+           maxlength="13" 
+           type="tel" 
+           name="user_phone" 
+           class="input-form"
+           placeholder="Phone">
+       </div> 
+       <div class="input-field">
+         <!-- <label class="input-title">Comment</label> -->
+           <textarea name="comment" 
+           class="input-form-comment"
+           placeholder="Comment"></textarea>
+         </div>
+       </div>
+  <button type="submit" class="form-btn">Submit</button>
+         </form>
