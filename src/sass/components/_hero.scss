@@ -1,11 +1,15 @@
 // Hero styles
 .hero {
     position: relative;
+    padding-top: 110px;
+    padding-left: 20px;
 }
 
 .hero__btn {
     min-width: 62px;
+    height: 24px;
     padding: 10px 7px;
+    margin-top: 32px;
     font-family: inherit;
     font-weight: 600;
     font-size: 8px;
@@ -25,12 +29,6 @@
     color: #F8D24E;
 }
 
-.hero__dots {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
 .hero__title {
     font-family: 'Seymour One', sans-serif;
     font-size: 26px;
@@ -44,3 +42,9 @@
     line-height: 0.97;
     text-transform: uppercase;
 }
+.hero__dots {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
