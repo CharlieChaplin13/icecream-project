@@ -18,41 +18,44 @@
             <a href="" class="header-main__link">Contact</a>
         </li>
     </ul>
+         <button type="button" class="adapt-menu-button is-open" 
+         data-menu-button>
+         <svg 
+         width="32" 
+         height="32"
+         aria-label="mobile menu switcher">
+          <use class="icon-close" href="./images/icons.svg#icon-close-button"></use>
+          <use class="menu-icon" href="./images/icons.svg#icon-Burger-3"></use>
+         </svg>
+         </button>
+         <div class="menu-container" data-menu>
+            <div class="menu-nav">
+                <ul class="menu-container__list">
+                    <li class="menu-container__item">
+                        <a href="#" class="menu-container__link">Home</a>
+                    </li>
+                    <li class="menu-container__item">
+                        <a href="#" class="menu-container__link">How it's made?</a>
+                    </li>
+                    <li class="menu-container__item">
+                        <a href="#" class="menu-container__link">Our products</a>
+                    </li>
+                    <li class="menu-container__item">
+                        <a href="#" class="menu-container__link">Contact</a>
+                    </li>
+                  </ul>
+            </div>
+            <div>
+                <button type="button" class="modal-button-buy">Buy now
+                </button>
+            </div>
+        </div>
         </nav>
+    
         <button type="button" class="header-main__button">Buy now
             <svg width="12" height="12">
             <use href="#"></use>
             </svg>
-        </button>
-        <button type="button" class="menu-button-open" data-menu-open>
-            <svg width="32" height="32">
-              <use href="#"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="modal-menu is-hidden" data-menu>
-        <button type="button" class="modal-menu__button-close" data-menu-close>
-          <svg width="32" height="32">
-            <use href="#"></use>
-          </svg>
-        </button>
-        <nav class="modal-menu__navigation">
-          <ul class="modal-menu__list">
-            <li class="modal-menu__item">
-                <a href="#" class="modal-menu__link">Home</a>
-            </li>
-            <li class="modal-menu__item">
-                <a href="#" class="modal-menu__link">How it's made?</a>
-            </li>
-            <li class="modal-menu__item">
-                <a href="#" class="modal-menu__link">Our products</a>
-            </li>
-            <li class="modal-menu__item">
-                <a href="#" class="modal-menu__link">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <button type="button" class="modal-button-buy">Buy now
         </button>
 </div>
 </header>
