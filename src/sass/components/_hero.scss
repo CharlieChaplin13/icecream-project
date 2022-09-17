@@ -1,5 +1,46 @@
 // Hero styles
 .hero {
-    background-color: #84A178;
+    position: relative;
+}
+
+.hero__btn {
+    min-width: 62px;
+    padding: 10px 7px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 1.25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     
+    background-color: transparent;
+}
+
+.hero__link {
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 1.25;
+    color: #F8D24E;
+}
+
+.hero__dots {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.hero__title {
+    font-family: 'Seymour One', sans-serif;
+    font-size: 26px;
+    line-height: 1.27;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.hero__title-big {
+    font-size: 34px;
+    line-height: 0.97;
+    text-transform: uppercase;
 }
