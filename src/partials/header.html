@@ -1,9 +1,9 @@
 <header class="header-main">
     <div class="container">
-        <a href="./index.html" class="header-main__logo">
-            <img src="./images/header-logo.svg" alt="header logo"/>
+        <a href="./index.html" class="logo">
+            <img src="./images/main-logo.png" alt="header logo"/>
         </a>
-        <nav class="header-main__nav">
+        <nav class="navigation">
     <ul class="header-main__list">
         <li class="header-main__item">
             <a href="" class="header-main__link">Home</a>
@@ -21,8 +21,38 @@
         </nav>
         <button type="button" class="header-main__button">Buy now
             <svg width="12" height="12">
-            <use href="./images/header-logo.svg"></use>
+            <use href="#"></use>
             </svg>
+        </button>
+        <button type="button" class="menu-button-open" data-menu-open>
+            <svg width="32" height="32">
+              <use href="#"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-menu is-hidden" data-menu>
+        <button type="button" class="modal-menu__button-close" data-menu-close>
+          <svg width="32" height="32">
+            <use href="#"></use>
+          </svg>
+        </button>
+        <nav class="modal-menu__navigation">
+          <ul class="modal-menu__list">
+            <li class="modal-menu__item">
+                <a href="#" class="modal-menu__link">Home</a>
+            </li>
+            <li class="modal-menu__item">
+                <a href="#" class="modal-menu__link">How it's made?</a>
+            </li>
+            <li class="modal-menu__item">
+                <a href="#" class="modal-menu__link">Our products</a>
+            </li>
+            <li class="modal-menu__item">
+                <a href="#" class="modal-menu__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="modal-button-buy">Buy now
         </button>
 </div>
 </header>
