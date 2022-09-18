@@ -1,4 +1,19 @@
 // Footer styles
+.footer{
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.footer__title {
+    @include tablet {
+        width: 352px;
+    }
+    @include desktop {
+        width: 505px;
+    }
+}
 .footer-title__pre-title{
 @include font(700, 26px, 1.23, 0.04em);
  text-transform: uppercase;
@@ -12,6 +27,10 @@ margin-bottom: 16px;
     color: $main-text-color;
     text-transform: uppercase;
     margin-bottom: 42px;
+
+    @include tablet {
+        display: flex;
+    }
 }
 .soc__list{
     display: flex;
@@ -50,10 +69,18 @@ margin-bottom: 16px;
 }
 .footer__phone--white{
     color: $main-text-color;
+    margin-left: 5px;
 }
 .footer__rights{
     padding: 16px 20px 62px;
     border-top: 1px solid #E1E1E1;
+
+    @include tablet {
+            padding: 14px 20px 13px;
+        }
+    @include desktop {
+        padding: 12px 20px 11px;
+    }
 }
 .rights__text {
     font-weight: 700;
@@ -65,4 +92,10 @@ margin-bottom: 16px;
     margin-right: auto;
 
     color: #7A7A7A;
+
+    @include tablet {
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
