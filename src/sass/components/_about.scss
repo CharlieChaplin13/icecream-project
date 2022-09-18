@@ -4,11 +4,32 @@
   padding-top: 60px;
 }
 
+.about__wrap {
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+  @include desktop {
+    gap: 100px;
+    align-items: center;
+  }
+}
+
 .about__wrap-title,
 .about__wrap-text {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.about__wrap-text {
+  @include tablet {
+    align-items: flex-start;
+  }
+  @include desktop {
+    flex-grow: 1;
+  }
 }
 
 .about__title-label {
@@ -19,12 +40,32 @@
   text-transform: uppercase;
   max-width: 210px;
   margin-bottom: 12px;
+
+  @include tablet {
+    @include font(800, 22px, 1.23, 0.04em);
+    max-width: 276px;
+  }
+  @include desktop {
+    font-size: 30px;
+    max-width: 376px;
+  }
 }
 
 .about__title {
   text-transform: uppercase;
   width: 200px;
   margin-bottom: 32px;
+
+  @include tablet {
+    font-size: 34px;
+    letter-spacing: 0.06em;
+    min-width: 456px;
+    margin-bottom: 72px;
+  }
+  @include desktop {
+    font-size: 36px;
+    min-width: 483px;
+  }
 }
 
 .about__img-wrap {
@@ -42,12 +83,29 @@
     #d9d9d9;
   box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
   border-radius: 140px;
+
+  @include tablet {
+    width: 334px;
+    height: 330px;
+    border-radius: 166px;
+  }
+  @include desktop {
+    width: 490px;
+    height: 490px;
+    border-radius: 250px;
+  }
 }
 
 .about__img {
   position: absolute;
   top: 22px;
   left: 0;
+  @include tablet {
+    top: 26px;
+  }
+  @include desktop {
+    top: 39px;
+  }
 }
 
 .about__text1 {
@@ -57,6 +115,17 @@
   text-align: center;
   width: 220px;
   margin-bottom: 4px;
+
+  @include tablet {
+    @include font(400, 12px, 1.76, 0.04em);
+    margin-bottom: 8px;
+    text-align: start;
+    width: 336px;
+  }
+  @include desktop {
+    font-size: 16px;
+    width: 463px;
+  }
 }
 
 .about__text2 {
@@ -66,10 +135,34 @@
   text-align: center;
   width: 220px;
   margin-bottom: 20px;
+  @include tablet {
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+    text-align: start;
+    width: 336px;
+    margin-bottom: 8px;
+  }
+  @include desktop {
+    @include font(400, 14px, 1.94, 0.04em);
+    width: 463px;
+  }
 }
 
 .about__text3 {
   display: none;
+  @include tablet {
+    display: block;
+    font-family: $font-main;
+    @include font(400, 12px, 1.94, 0.04em);
+    color: $main-text-color;
+    text-align: start;
+    width: 280px;
+    margin-bottom: 48px;
+  }
+  @include desktop {
+    width: 463px;
+    font-size: 14px;
+  }
 }
 
 .about__button {
