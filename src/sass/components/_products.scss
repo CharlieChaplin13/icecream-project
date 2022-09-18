@@ -1,24 +1,18 @@
 .products {
     width: 100%;
-}
-.products__block {
-//     width: 320px;
-//     margin-left: auto;
-//     margin-right: auto;
     padding: 60px 0;
-//     background-image: url(../images/products/background-mobile-1.jpg), url(../images/products/background-mobile-2.jpg), url(../images/products/background-mobile-3.jpg);
-//         background-position: top 0 right 0, top 745px right 0, bottom 0 right 0;
-//         background-repeat: no-repeat;
-//         @media (min-device-pixel-ratio: 2),
-//         (-webkit-min-device-pixel-ratio: 2),
-//         (min-resolution: 192dpi),
-//         (min-resolution: 2dppx) {
-//             & {
-//                 background-image: url(../images/products/background-mobile-1-2x.jpg), url(../images/products/background-mobile-2-2x.jpg), url(../images/products/background-mobile-3-2x.jpg);
-//                 background-position: top 0 right 0, top 700px right 0, bottom 0 right 0;
-//                 background-size: contain;
-//             }
-//         }
+    background-image: url(../images/products/background-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    & {
+                        background-image: url(../images/products/background-mobile-2x.jpg);
+                        background-size: contain;
+                    }
+                }
 }
 .products__text {
     font-family: $font-main;
