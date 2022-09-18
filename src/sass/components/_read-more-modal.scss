@@ -1,1 +1,42 @@
 // Read more modal styles
+.read-more-modal {
+  position: relative;
+  width: 280px;
+  height: 459px;
+  padding: 28px;
+  background: $main-text-color;
+  border: 1px solid $accent-color;
+  border-radius: 10px;
+}
+
+.read-more-modal__button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: transparent;
+  border: none;
+  width: 16px;
+  height: 16px;
+}
+
+.read-more-modal__title {
+  font-family: $font-title;
+  color: $accent-text-color;
+  @include font(400, 16px, 1.5, 0);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.read-more-modal__video {
+  width: 224px;
+  height: 199px;
+  margin-bottom: 20px;
+}
+
+.read-more-modal__text {
+  font-family: $font-main;
+  color: $accent-text-color;
+  @include font(400, 14px, 1.4, 0);
+  width: 224px;
+}
