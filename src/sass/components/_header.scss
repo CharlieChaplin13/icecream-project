@@ -1,1 +1,113 @@
-// Header styles
+.container {
+    display: flex;
+
+    @include tablet {
+        display: block;
+    }
+
+}
+
+.logo {
+    margin-left: 16px;
+    margin-right: 269px;
+    margin-top: 8px;
+}
+
+.navigation {
+display: none;
+
+    @include tablet {
+        display: none;
+    }
+
+    @include desktop {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 40px;
+    }
+}
+
+.navigation__list {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navigation__link {
+    color: #FCFCFC;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+    color: #F8D24E;
+}
+
+.navigation__button {
+    display: none;
+
+    @include tablet {
+    display: inline-flex;
+    justify-content: end;
+    font-size: 14px;
+    font-weight: 600;
+    width: 152px;
+    height: 42px;
+    padding: 12px 34px 12px 34px;
+    background-color: #F8D24E;
+    color: #131313;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    }
+
+    @include desktop {
+    display: inline-flex;
+    justify-content: end;
+    // margin-left: ;
+    font-size: 14px;
+    font-weight: 600;
+    width: 152px;
+    height: 42px;
+    padding: 12px 34px 12px 34px;
+    background-color: #F8D24E;
+    color: #131313;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    }
+    
+}
+
+.navigation__button:hover,
+.navigation__button:focus {
+    background-color: #0A8817;
+    color: #131313;
+}
+
+
+.adapt-menu-button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding-top: 16px;
+    margin-right: 0;
+
+    @include tablet {
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+
+    @include desktop {
+        display: none;
+    }
+}
+
+.menu-icon {
+    background-color: transparent;
+    border-color: transparent;
+}
