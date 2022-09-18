@@ -63,7 +63,6 @@ display: none;
     @include tablet {
     display: block;
     margin-top: 24px;
-    justify-content: end;
     font-size: 14px;
     font-weight: 600;
     width: 152px;
@@ -78,7 +77,6 @@ display: none;
 
     @include desktop {
     display: block;
-    justify-content: end;
     margin-left: auto;
     margin-top: 28px;
     font-size: 14px;
@@ -88,19 +86,29 @@ display: none;
     padding: 12px 34px 12px 34px;
     background-color: #F8D24E;
     color: #131313;
+    fill:  #131313;
     border-radius: 10px;
     border: none;
     cursor: pointer;
     }
-    
 }
 
-.navigation__button:hover,
-.navigation__button:focus {
+.navigation__button:hover {
     background-color: #0A8817;
     color: #131313;
+    fill: #131313;   
+}
+.navigation__button:focus {
+    background-color: #0A8817;
+    color: #FCFCFC;
+    fill: #FCFCFC;
 }
 
+.navigation__button:disabled {
+    background-color:  #ABABAB;
+    color: #131313;
+    fill: #131313;
+}
 
 .adapt-menu-button {
     display: block;
@@ -122,6 +130,8 @@ display: none;
         display: none;
     }
 }
+
+
 
 .menu-icon {
     background-color: transparent;
