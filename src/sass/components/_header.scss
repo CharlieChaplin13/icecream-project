@@ -165,20 +165,34 @@ display: none;
     background-color: #84A178;
     padding: 0px;
     text-align: center;
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 700;
     color: #FCFCFC;
 
     &.is-open {
         display: block;
     }
+    }
+
+.content-menu__list {
+    
+    margin-top: 51px;
+
+    @include tablet {
+        margin-top: 40px;
+    }
 }
 
 .content-menu__link {
-    margin-top: 40px;
-    font-size: 48px;
+    margin-top: 32px;
+    font-size: 32px;
     font-weight: 700;
     color: #FCFCFC;
+
+    @include tablet {
+        margin-top: 40px;
+        font-size: 48px;
+    }
 }
 
 .content-menu__link:hover,
