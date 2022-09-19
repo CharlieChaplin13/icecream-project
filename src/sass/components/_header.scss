@@ -4,15 +4,6 @@
 
 .header-container {
     display: flex;
-    
-
-    @include tablet {
-        display: flex;
-    }
-
-    @include desktop {
-        display: flex;
-    }
 }
 
 .logo {
@@ -63,9 +54,6 @@ display: none;
 .navigation__button {
     display: none;
 
-    // @media screen and (min-width: 768px) {
-    //     display: none;
-    //   }
     @include tablet {
     display: block;
     margin-top: 24px;
@@ -118,7 +106,7 @@ display: none;
 
 .menu-button {
     display: block;
-    // display: inline-flex;
+   
     background-color: transparent;
     border: none;
     padding-top: 16px;

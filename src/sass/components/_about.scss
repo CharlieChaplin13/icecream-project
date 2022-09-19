@@ -152,8 +152,7 @@
   }
 
   @include tablet {
-    line-height: 1.76;
-    letter-spacing: 0.04em;
+    @include font(400, 12px, 1.76, 0.04em);
     text-align: start;
     width: 336px;
     margin-bottom: 8px;

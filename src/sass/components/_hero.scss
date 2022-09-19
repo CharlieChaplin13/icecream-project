@@ -10,14 +10,15 @@
 
 }
 
+
 .hero__img {
     position: absolute;
     left: 0;
     bottom: 0;
-
     margin: auto;
 
 }
+
 
 .hero__btn {
     min-width: 62px;
@@ -99,5 +100,20 @@
 .hero__made{
     display: flex;
     align-items: center;
+}
+
+
+.hero__dots {
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    bottom: 0;
+}
+
+.hero__ice {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    transform: translate(5%, 16.5%);
 }
 
