@@ -130,6 +130,7 @@
     font-size: 14px;
     line-height: 176%;
     text-align: center;
+    letter-spacing: 0.04em;
     color: $accent-text-color;
 }
 .products-item__btn {
@@ -173,5 +174,145 @@
     .products {
         width: 479px;
     }
+    .products__text {
+        font-size: 18px;
+    }
+    .products-item__title {
+        font-size: 20px;
+    }
+    .products-item__text {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .products {
+        width: 768px;
+        background-image: url(../images/products/background-tablet.jpg);
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                & {
+                background-image: url(../images/products/background-mobile-2x.jpg);
+            }
+        }
+    }
+    .products__text {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+    
+    .products__title {
+        font-size: 34px;
+        margin-bottom: 200px;
+    }
+    .products__list {
+        display: flex;
+        gap: 16px;
+    }
+    .products-item {
+        min-width: 0;
+        width: 224px;
+        min-height: 428px;
+        padding: 108px 26px 12px;
+        margin-bottom: 0;
+        &::after {
+                top: -120px;
+            }
+        &::before {
+            top: -109px;
+        }
+    }
+}
+@media screen and (min-width: 769px) {
+    .products {
+        width: 100%;
+        background-image: url(../images/products/background-desktop.jpg);
 
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            & {
+                background-image: url(../images/products/background-desktop-2x.jpg);
+            }
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .products {
+        width: 1200px;
+        background-image: url(../images/products/background-desktop.jpg);
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            & {
+                background-image: url(../images/products/background-desktop-2x.jpg);
+            }
+        }
+    }
+        .products__list {
+            gap: 32px;
+        }
+    
+        .products__text {
+            font-size: 30px;
+            line-height: 1.23;
+            margin-bottom: 12px;
+        }
+    
+        .products__title {
+            font-size: 36px;
+            line-height: 1.25;
+            margin-bottom: 303px;
+        }
+    
+        .products-item {
+            width: 370px;
+            min-height: 535px;
+            padding: 166px 64px 52px;
+            margin: 0;
+    
+            &::after {
+                width: 300px;
+                height: 300px;
+                top: -183px;
+            }
+    
+            &::before {
+                width: 300px;
+                height: 300px;
+                top: -166px;
+            }
+    }
+    .products-item__title {
+        font-size: 30px;
+        line-height: 1.23;
+        margin-bottom: 65px;
+    }
+    .products-item__text {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 1201px) {
+.products {
+    width: 100%;
+    background-image: url(../images/products/background-desktop-1600.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            & {
+                background-image: url(../images/products/background-desktop-1600-2x.jpg);
+            }
+        }
+}
+}
+@media screen and (min-width: 1201px) {
+    .products {
+        width: 1600px;
+    }
 }
