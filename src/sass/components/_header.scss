@@ -4,14 +4,6 @@
 
 .header-container {
     display: flex;
-
-    @include tablet {
-        display: flex;
-    }
-
-    @include desktop {
-        display: flex;
-    }
 }
 
 .logo {
