@@ -1,1 +1,43 @@
-// Buy now modal styles
+.products-range__list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    border-color: #84A278;
+    
+}
+
+.producrs-range__item {
+display: flex;
+}
+
+.modal-window__title {
+    color: #131313;
+    font-family: 'Seymour One';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.modal-sub-btn {
+    display: block;
+    text-align: center;
+    margin-top: 32px;
+    padding-bottom: 32px;
+}
+
+.form-btn {
+    // display: block;
+    // margin-left: auto;
+    // margin-top: 28px;
+    font-size: 14px;
+    font-weight: 600;
+    width: 121px;
+    height: 42px;
+    padding: 12px 34px 12px 34px;
+    background-color: #F8D24E;
+    color: #131313;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}

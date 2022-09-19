@@ -1,4 +1,4 @@
-<div>Buy now modal</div>
+<!-- <div>Buy now modal</div> -->
 
  <!-- <div class="backdrop is-hidden" data-modal> -->
      <div class="modal-buy">
@@ -7,15 +7,26 @@
            <use href="#"></use>
          </svg>
        </button>
-       <p class="modal-window__title">Buy now</p>
-
        <section class="products-range">
+        <h3 class="modal-window__title">Buy now</h3>
          <ul class="products-range__list">
-             <li class="products-range__item">Ice Cream</li>
+             <li class="products-range__item">
+              <div>
+                <picture>
+                  <source srcset="./images/modal-buy.img/ice-desk-1x.jpg 1x, ./images/modal-buy.img/ice-desk-2x.jpg 2x"
+                  media="(min-width:1200px)"/> 
+                  <!-- <source srcset="./img/olga-tab-2.jpg 1x, ./img/olga-tab-2-2x.jpg 2x"
+                  media="(min-width:768px)"/> 
+                  <source srcset="./img/olga-mob-2.jpg 1x, ./img/olga-mob-2-2x.jpg 2x"
+                  media="(max-width:767px)"/>  -->
+                  <img src="./images/modal-buy.img/ice-desk-1x.jpg" alt="ice" width="50" height="50" />
+                </picture>
+              </div>
+              <p>Ice Cream</p>
              <li class="products-range__item">Ice Coffee</li>
              <li class="products-range__item">Milkshake</li>
          </ul>
-       </section>
+        </section>
        <form class="modal-buy__form">
          <div class="input-field">
          <label for="userinfo"></label>
@@ -50,5 +61,7 @@
            </textarea>
          </div>
        </div>
+<div class="modal-sub-btn">
   <button type="submit" class="form-btn">Submit</button>
+</div>
          </form>
