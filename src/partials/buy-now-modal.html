@@ -1,15 +1,16 @@
 <!-- <div>Buy now modal</div> -->
 
- <!-- <div class="backdrop is-hidden" data-modal> -->
+ <div class="backdrop" data-modal>
      <div class="modal-buy">
        <button type="button" class="modal-button" data-modal-close>
          <svg class="modal-icon" width="20" height="20">
            <use href="./images/icons.svg#close-cross"></use>
          </svg>
        </button>
+       <h3 class="modal-window__title">Buy now</h3>
        <section class="products-range">
         <div class="container">
-        <h3 class="modal-window__title">Buy now</h3>
+        <!-- <h3 class="modal-window__title">Buy now</h3> -->
          <ul class="products-range__list">
              <li class="products-range__item producrs-range__item--ice-color">
               <div>
@@ -26,7 +27,7 @@
                   <picture>
                     <source srcset="./images/modal-buy.img/coffee-desk-1x.jpg 1, ./images/modal-buy.img/coffee-desk-2x.jpg 2x"
                     media="(min-width:1200px)"/> 
-                    <img class="modal-image" src="./images/modal-buy.img/ice-desk-1x.jpg" alt="ice" width="131" height="131" />
+                    <img class="modal-image" src="./images/modal-buy.img/coffee-desk-1x.jpg" alt="ice" width="131" height="131" />
                   </picture>
                 </div>
                 <p>Ice Coffee</p>
@@ -36,7 +37,7 @@
                     <picture>
                       <source srcset="./images/modal-buy.img/milk-desk-1x.jpg 1x, ./images/modal-buy.img/milk-desk-2x.jpg 2x"
                       media="(min-width:1200px)"/> 
-                      <img class="modal-image" src="./images/modal-buy.img/ice-desk-1x.jpg" alt="ice" width="131" height="131" />
+                      <img class="modal-image" src="./images/modal-buy.img/milk-desk-1x.jpg" alt="ice" width="131" height="131" />
                     </picture>
                   </div>
                   <p>Milkshake</p>
@@ -44,41 +45,49 @@
          </ul>
         </div>
         </section>
-       <form class="input-form">
-         <div class="input-field">
-         <label for="userinfo"></label>
-           <input
-           type="text" 
-           minlength="2"
-           id="userinfo" 
-           name="username" 
-           class="input-form"
-           placeholder="Name"
-           required>
-       </div>
-       <div class="input-field">
-         <label for="phone-number"></label>
-           <input
-           type="tel" 
-           minlength="10"
-           maxlength="13"
-           id="phone-number" 
-           name="user_phone" 
-           class="input-form"
-           placeholder="Phone"
-           required>
-       </div> 
-       <div class="input-field">
-         <label for="add-info"></label>
-           <textarea name="comment" 
-           class="input-form-comment"
-           id="add-info"
-           placeholder="Comment"
-           required>
-           </textarea>
-         </div>
-       </div>
+      </div>
+      <form class="modal-form">
+        <div class="input-field">
+        <label for="userinfo"></label>
+        <div class="input-wrap">
+          <input 
+          type="text" 
+          minlength="2"
+          id="userinfo"
+          name="username" 
+          class="input-form"
+          placeholder="Name"
+          required>
+        </div>
+      </div>
+      <div class="input-field">
+        <label for="phone-number"></label>
+        <div class="input-wrap">
+          <input
+          type="tel" 
+          minlength="10"
+          maxlength="13"
+          id="phone-number" 
+          name="user_phone" 
+          class="input-form"
+          placeholder="Phone"
+          required>
+      </div> 
+    </div>
+      <div class="input-field">
+        <label for="add-info"></label>
+        <div class="input-wrap">
+          <textarea name="comment" 
+          class="input-form-comment"
+          id="add-info"
+          placeholder="Comment"
+          required>
+          </textarea>
+        </div>
+      </div>
 <div class="modal-sub-btn">
-  <button type="submit" class="form-btn">Submit</button>
+ <button type="submit" class="form-btn">Submit</button>
 </div>
-         </form>
+        </form>
+
+
