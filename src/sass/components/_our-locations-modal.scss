@@ -1,1 +1,166 @@
 // Our locations modal styles
+.map-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: space-between;
+
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: opacity 250ms linear, visibility 550ms;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 767px) {
+  .map-box--decor {
+    width: 280px;
+    height: 365px;
+    padding: 28px 28px;
+  }
+  .map__contacts {
+    width: 224px;
+    height: 199px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+  }
+
+  .map__title {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 230px;
+    margin-bottom: 20px;
+  }
+
+  .submitik-map {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .map-box--decor {
+    width: 568px;
+    height: 458px;
+    padding: 32px 59px;
+  }
+  .map__contacts {
+    width: 448px;
+    height: 260px;
+    border-radius: 10px;
+    margin-bottom: 32px;
+  }
+
+  .map__title {
+    font-size: 20px;
+    line-height: 1.4;
+    max-width: 322px;
+    margin-bottom: 32px;
+  }
+
+  .conatact__title {
+    font-size: 20px;
+    line-height: 1.4;
+    max-width: 322px;
+    margin-bottom: 24px;
+  }
+  .submitik-map {
+    margin-bottom: 32px;
+  }
+}
+
+/* Заголоовок загальне оформлення  */
+
+.conatact__title--decor {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  color: #131313;
+}
+
+/* загальна кнопка */
+
+.modal-btn-close {
+  cursor: pointer;
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  border-radius: 15px;
+  top: 8px;
+  right: 8px;
+  background-color: #ffffff;
+  justify-content: center;
+}
+
+.modal-btn-close__svgen-close {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition-duration: 250ms;
+  transition-property: border, fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submitik-map {
+  width: 121px;
+  height: 42px;
+  left: 224px;
+  top: 594px;
+  background: #f8d24e;
+  border-radius: 10px;
+  border: none;
+  padding-left: auto;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+
+  align-items: center;
+  text-align: center;
+
+  color: #131313;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 13px;
+  justify-content: center;
+}
+
+.submitik-map:hover {
+  background: #0a8817;
+}
+.submitik-map:focus {
+  background: #0a8817;
+  color: #ffffff;
+}
+.submitik-map:disabled {
+  background: #ababab;
+}
