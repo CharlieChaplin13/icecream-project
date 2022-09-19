@@ -35,11 +35,14 @@
 .about__title-label {
   font-family: $font-main;
   color: $main-text-color;
-  @include font(700, 18px, 1.22, 0);
+  @include font(700, 5.63vw, 1.22, 0);
   text-align: center;
   text-transform: uppercase;
-  max-width: 210px;
   margin-bottom: 12px;
+
+  @include mobile {
+    font-size: 27px;
+  }
 
   @include tablet {
     @include font(800, 22px, 1.23, 0.04em);
@@ -70,8 +73,8 @@
 
 .about__img-wrap {
   position: relative;
-  width: 278px;
-  height: 278px;
+  width: 86.88vw;
+  height: 86.88vw;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 62px;
@@ -82,7 +85,13 @@
     ),
     #d9d9d9;
   box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
-  border-radius: 140px;
+  border-radius: 43.75vw;
+
+  @include mobile {
+    width: 416px;
+    height: 416px;
+    border-radius: 208px;
+  }
 
   @include tablet {
     width: 334px;
@@ -111,10 +120,13 @@
 .about__text1 {
   font-family: $font-main;
   color: $main-text-color;
-  @include font(400, 12px, 1.76, 0.04em);
+  @include font(400, 3.75vw, 1.76, 0.04em);
   text-align: center;
-  width: 220px;
   margin-bottom: 4px;
+
+  @include mobile {
+    font-size: 18px;
+  }
 
   @include tablet {
     @include font(400, 12px, 1.76, 0.04em);
@@ -131,10 +143,14 @@
 .about__text2 {
   font-family: $font-main;
   color: $main-text-color;
-  @include font(400, 12px, 1.62, 0);
+  @include font(400, 3.75vw, 1.62, 0);
   text-align: center;
-  width: 220px;
   margin-bottom: 20px;
+
+  @include mobile {
+    font-size: 18px;
+  }
+
   @include tablet {
     line-height: 1.76;
     letter-spacing: 0.04em;
@@ -156,7 +172,6 @@
     @include font(400, 12px, 1.94, 0.04em);
     color: $main-text-color;
     text-align: start;
-    width: 280px;
     margin-bottom: 48px;
   }
   @include desktop {
