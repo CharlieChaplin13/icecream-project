@@ -77,10 +77,8 @@
     }
     &:nth-child(2n) {
         background-color: $card-yellow-color;
-
         &::after {
             background-image: url(../images/products/ice-coffe.png);
-
             @media (min-device-pixel-ratio: 2),
             (-webkit-min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
@@ -175,4 +173,5 @@
     .products {
         width: 479px;
     }
+
 }
