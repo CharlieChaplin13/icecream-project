@@ -38,9 +38,13 @@
     margin-bottom: 20px;
     border-radius: 4px;
     
-    @include font (500, 12px, 1.86, 0.04em);
+    @include font (500, 3.75vw, 1.86, 0.04em);
     font-style: normal;
     text-transform: uppercase;
+
+    @include mobile {
+      font-size: 12px;
+    }
 }
 
 .branch__city  {
@@ -52,10 +56,14 @@
 }
 
 .branch__link {
-    @include font (500, 12px, 1.83, 0.04em);
+    @include font (500, 3.75vw, 1.83, 0.04em);
     text-align: left;
     font-style: normal;
     color: $card-brown-color;
+
+    @include mobile {
+      font-size: 12px;
+    }
 }
 
 
@@ -70,18 +78,30 @@
 
 .schedule__day {
     color: $accent-text-color;
-    @include font (500, 12px, 1.83, 0.04em);
+    @include font (500, 3.75vw, 1.83, 0.04em);
+
+    @include mobile {
+      font-size: 12px;
+    }
 }
 
 .schedule__time {
-    @include font (500, 12px, 1.86, null);
+    @include font (500, 3.75vw, 1.86, null);
     color: $disabled-color;
+
+    @include mobile {
+      font-size: 12px;
+    }
 }
 
 .contacts__link {
-    @include font (500, 12px, 1.5, null);
+    @include font (500, 3.75vw, 1.5, null);
     color: $accent-text-color;
     text-decoration: none;
+
+    @include mobile {
+      font-size: 12px;
+    }
 }
 
 
