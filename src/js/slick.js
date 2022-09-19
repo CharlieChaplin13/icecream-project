@@ -3,7 +3,7 @@ $('.one-time').slick({
   infinite: true,
   speed: 300,
   slidesToShow: 1,
-  autoplay: true,
+  // autoplay: true,
   autoplaySpeed: 4000,
   arrows: false,
 });
