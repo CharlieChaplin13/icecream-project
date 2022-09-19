@@ -1,3 +1,4 @@
+
 // Hero styles
 .hero {
     position: relative;
@@ -8,6 +9,16 @@
     }
 
 }
+
+
+.hero__img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
 
 .hero__btn {
     min-width: 62px;
@@ -91,6 +102,7 @@
     align-items: center;
 }
 
+
 .hero__dots {
     position: absolute;
     width: 100vw;
@@ -103,3 +115,4 @@
     bottom: 0;
     transform: translate(0%, 11%);
 }
+
