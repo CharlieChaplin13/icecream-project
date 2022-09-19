@@ -12,7 +12,7 @@
 }
 
 .one-time {
-  max-width: 280px;
+  width: 280px;
   @include mobile {
     width: 440px;
   }
@@ -52,15 +52,18 @@
   height: 256px;
   background-color: $background-color;
   border-radius: 10px;
-
   margin-bottom: 30px;
+
   @include tablet {
     margin-bottom: 32px;
+    height: 138px;
   }
 }
+
 .review__text {
   padding: 34px 39px;
   line-height: 2.55;
+  font-weight: 400;
   text-align: center;
   &--padding {
     padding-top: 70px;
@@ -68,11 +71,15 @@
   &--paddingg {
     padding-top: 50px;
   }
+
   @include tablet {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.86;
     letter-spacing: 0.04em;
+  }
+  @include desktop {
+    font-size: 16px;
   }
 }
 
@@ -82,26 +89,34 @@
   line-height: 1.86;
   text-align: center;
   color: $accent-text-color;
+
+  @include tablet {
+    font-size: 16px;
+  }
 }
 
+// ПЕРЕОПРЕДЕЛЕНИЕ slick dots
 .slick-dots li button:before {
-  font-size: 6px;
-  line-height: 20px;
-
   position: absolute;
   top: 0;
   left: 0;
-
+  content: '';
+  opacity: 1;
   width: 12px;
   height: 12px;
+
+  font-size: 6px;
+  line-height: 20px;
   border-radius: 50%;
-  content: '';
   background-color: #d9d9d9;
   text-align: center;
-  opacity: 1;
 }
 
 .slick-dots li.slick-active button:before {
   background-color: #84a178;
   opacity: 1;
+}
+
+.slick-dots {
+  bottom: -34px;
 }
