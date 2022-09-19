@@ -48,13 +48,14 @@
   height: 256px;
   background-color: $background-color;
   border-radius: 10px;
-
   margin-bottom: 30px;
+
   @include tablet {
     margin-bottom: 32px;
     height: 138px;
   }
 }
+
 .review__text {
   padding: 34px 39px;
   line-height: 2.55;
@@ -66,6 +67,7 @@
   &--paddingg {
     padding-top: 50px;
   }
+
   @include tablet {
     font-weight: 500;
     font-size: 14px;
