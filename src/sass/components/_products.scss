@@ -1,6 +1,6 @@
 .products {
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 60px 0;
     margin: 0 auto;
     background-image: url(../images/products/background-mobile.jpg);
@@ -20,7 +20,7 @@
 .products__text {
     font-family: $font-main;
     font-weight: 800;
-    font-size: 18px;
+    font-size: 5.625vw;
     line-height: 1.22;
     text-align: center;
     text-transform: uppercase;
@@ -33,6 +33,7 @@
     text-transform: uppercase;
     color: $accent-text-color;
     margin-bottom: 148px;
+    font-size: 9.375vw;
 }
 .products-item {
     position: relative;
@@ -118,16 +119,16 @@
 .products-item__title {
     font-family: $font-main;
     font-weight: 700;
-    font-size: 20px;
     line-height: 1.2;
     text-align: center;
     text-transform: uppercase;
     color: $accent-text-color;
     margin-bottom: 40px;
+    font-size: 6.25vw;
 }
 .products-item__text {
     font-family: $font-main;
-    font-size: 14px;
+    font-size: 4.375vw;
     line-height: 176%;
     text-align: center;
     letter-spacing: 0.04em;
@@ -174,15 +175,21 @@
     .products {
         width: 479px;
     }
-    .products__text {
-        font-size: 18px;
-    }
-    .products-item__title {
-        font-size: 20px;
-    }
-    .products-item__text {
-        font-size: 14px;
-    }
+        .products__text {
+            font-size: 18px;
+        }
+    
+        .products__title {
+            font-size: 30px;
+        }
+    
+        .products-item__title {
+            font-size: 20px;
+        }
+    
+        .products-item__text {
+            font-size: 14px;
+        }
 }
 @media screen and (min-width: 768px) {
     .products {
