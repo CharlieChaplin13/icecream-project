@@ -53,7 +53,7 @@ display: none;
 
 .navigation__button {
     display: none;
-    
+
     @include tablet {
     display: block;
     margin-top: 24px;
@@ -106,7 +106,7 @@ display: none;
 
 .menu-button {
     display: block;
-    // display: inline-flex;
+   
     background-color: transparent;
     border: none;
     padding-top: 16px;
