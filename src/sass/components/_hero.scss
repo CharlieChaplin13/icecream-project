@@ -1,1 +1,103 @@
+<<<<<<< Updated upstream
 // Hero styles
+=======
+// Hero styles
+.hero {
+    position: relative;
+    padding-top: 110px;
+    padding-bottom: 268px;
+    @include mobile {
+        padding-bottom: 328px;
+    }
+
+}
+
+.hero__img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.hero__btn {
+    min-width: 62px;
+    height: 24px;
+    padding: 10px 7px;
+    margin-top: 32px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 1.25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: transparent;
+    &:hover {
+        border-color: $hover-color;
+    }
+    &:focus {
+        border-color: $hover-color;
+        color: $main-text-color;
+    }
+    &:disabled {
+        border-color: $disabled-color;
+    }
+}
+
+.hero__btn--made {
+    margin-top: 32px;
+    margin-left: 8px;
+    height: 24px;
+    padding: 10px 7px;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: transparent;
+    background-color: transparent;
+    color: $accent-color;
+    text-decoration: underline;
+    &:hover {
+        color: $hover-color;
+    }
+    &:focus {
+        color: $main-text-color;
+    }
+    &:disabled {
+        color: $disabled-color;
+    }
+}
+
+.hero__title {
+    font-family: $font-title;
+    font-size: 26px;
+    line-height: 1.27;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    width: 247px;
+    @include tablet {
+        font-size: 18px;
+        line-height: 1.28;
+        width: 181px;
+    }
+}
+
+.hero__title-big {
+    font-size: 34px;
+    line-height: 0.97;
+    text-transform: uppercase;
+    @include tablet {
+        font-size: 24px;
+        line-height: 0,55;
+        }
+}
+
+.hero__made{
+    display: flex;
+    align-items: center;
+}
+>>>>>>> Stashed changes
