@@ -2,24 +2,67 @@
 // Hero styles
 .hero {
     position: relative;
-    padding-top: 110px;
-    padding-bottom: 268px;
-    @include mobile {
-        padding-bottom: 328px;
+    padding-top: 61px;
+    padding-bottom: 268px; 
+    @include tablet {
+        padding-top: 28px;
+        padding-bottom: 17px;
+    } 
+
+}
+
+.hero__title {
+    font-family: $font-title;
+    font-size: 26px;
+    line-height: 1.27;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    width: 247px;
+    margin: 0;
+    display: inline-block;
+
+    @include tablet {
+        font-size: 18px;
+        line-height: 1.28;
+        width: 181px;
     }
-
 }
 
+.hero__title-big {
+    font-size: 34px;
+    line-height: 0.97;
+    text-transform: uppercase;
 
-.hero__img {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    margin: auto;
-
+    @include tablet {
+        font-size: 24px;
+        line-height: 0.55;
+    }
 }
 
+.hero__group {
+    display: flex;
+}
 
+.hero__list {
+    margin-left: auto;
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
+}
+
+.hero__item {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.21;
+    color: $accent-text-color;
+    text-align: right;
+}
+
+.hero__item-desc {
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: right;
+}
 .hero__btn {
     min-width: 62px;
     height: 24px;
@@ -44,6 +87,9 @@
     &:disabled {
         border-color: $disabled-color;
     }
+          @include tablet {
+              margin-top: 20px;
+          }
 }
 
 .hero__btn--made {
@@ -71,30 +117,9 @@
     &:disabled {
         color: $disabled-color;
     }
-}
-
-.hero__title {
-    font-family: $font-title;
-    font-size: 26px;
-    line-height: 1.27;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    width: 247px;
-    @include tablet {
-        font-size: 18px;
-        line-height: 1.28;
-        width: 181px;
-    }
-}
-
-.hero__title-big {
-    font-size: 34px;
-    line-height: 0.97;
-    text-transform: uppercase;
-    @include tablet {
-        font-size: 24px;
-        line-height: 0,55;
-        }
+         @include tablet {
+            margin-top: 20px;
+         }
 }
 
 .hero__made{
@@ -102,6 +127,39 @@
     align-items: center;
 }
 
+.hero__cluster {
+    display: flex;
+}
+
+.hero__many--ice {
+    margin-top: 28px;
+    z-index: 2;
+}
+
+.hero__text {
+   @media screen and (max-width: 767px) {
+    display: none;
+   }
+   font-size: 12px;
+   line-height: 1.42;
+   width: 151px;
+   margin-top: 56px;
+   margin-left: 33px;
+   margin-right: 0;
+   display: inline-block;
+}
+
+
+
+.hero__item-desc:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.hero__many--ice {
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
+}
 
 .hero__dots {
     position: absolute;
@@ -112,8 +170,13 @@
 
 .hero__ice {
     width: 100vw;
+    
     position: absolute;
     bottom: 0;
     transform: translate(5%, 16.5%);
+    @include tablet {
+        width: 57%;
+        transform: translate(77%, 12.5%);
+    }
 }
 
