@@ -1,1 +1,83 @@
-// Advantages section styles
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.advantages__cow::before {
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: $accent-color;
+  border-radius: 50%;
+  background-image: url(../images/advantages/cow-mob-1.5x.png);
+  background-size: 36px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 16px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/advantages/cow-mob-3x.png);
+  }
+}
+
+.advantages__value {
+  margin-bottom: 18px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $main-text-color;
+}
+.advantages__text {
+  margin-bottom: 28px;
+  width: 230px;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 170%;
+  color: $main-text-color;
+}
+
+.advantages__weight::before {
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: $accent-color;
+  border-radius: 50%;
+  background-image: url(../images/advantages/weight-mob-1.5x.png);
+  background-size: 36px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 16px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/advantages/weight-mob-3x.png);
+  }
+}
+
+.advantages__icecream::before {
+  content: ' ';
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: $accent-color;
+  border-radius: 50%;
+  background-image: url(../images/advantages/ice-crema-mob-1.5x.png);
+  background-repeat: no-repeat;
+  background-size: 36px;
+  background-position: center;
+  margin-bottom: 16px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/advantages/ice-crema-mob-3x.png);
+  }
+}
