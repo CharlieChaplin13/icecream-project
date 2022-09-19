@@ -2,18 +2,16 @@
     position: relative;
 }
 
-.container {
+.header-container {
     display: flex;
-    width: 480px;
+    
 
     @include tablet {
         display: flex;
-        width: 768px;
     }
 
     @include desktop {
         display: flex;
-        width: 1200px;
     }
 }
 
