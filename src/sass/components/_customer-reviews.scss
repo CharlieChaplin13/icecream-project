@@ -8,7 +8,7 @@
 }
 
 .one-time {
-  max-width: 280px;
+  width: 280px;
   @include mobile {
     width: 440px;
   }
@@ -52,6 +52,7 @@
   margin-bottom: 30px;
   @include tablet {
     margin-bottom: 32px;
+    height: 138px;
   }
 }
 .review__text {
