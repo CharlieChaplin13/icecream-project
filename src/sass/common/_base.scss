@@ -3,7 +3,6 @@ body {
   color: $main-text-color;
   font-family: $font-main;
   font-size: 12px;
-  cursor: url(../images/cursor.png), url(../images/cursor-1.cur), default;
 }
 
 h1,
@@ -26,6 +25,7 @@ ul {
 a {
   text-decoration: none;
   display: inline-block;
+  cursor: url(../images/cursor.png), url(../images/cursor-1.cur), default;
 }
 
 img {
