@@ -1,1 +1,200 @@
 // Franchise modal styles
+
+.franchise {
+   display: flex;
+   justify-content: center;
+ }
+ 
+ .contact {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   border: 2px solid #f8d24e;
+   border-radius: 10px;
+   background-color: white;
+   display: flex;
+   flex-wrap: wrap;
+   justify-items: center;
+   justify-content: center;
+ 
+   opacity: 1;
+   transform: translate(-50%, -50%);
+ }
+ 
+ /* Заголоовок загальний */
+ 
+ .contact__title--decor {
+   font-family: "Seymour One";
+   font-style: normal;
+   font-weight: 400;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   color: #131313;
+ }
+ 
+ /* Текстовий блок */
+ 
+ .contact__text--decor {
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 400;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   max-width: 448px;
+   margin-left: auto;
+   margin-right: auto;
+   color: #131313;
+   margin-bottom: 32px;
+ }
+ 
+ /* Вікна для заповнення */
+ 
+ .contact-franchise__coment,
+ .contact-franchise__nametelemaelcontact {
+   display: inline-flexbox;
+   margin: 0;
+   background: rgba(248, 210, 78, 0.1);
+   border: 1px solid #84a178;
+   border-radius: 10px;
+ }
+ 
+ /* падінг авто по щоб було поцентру */
+ 
+ .contact-franchise__nametelemaelcontact--dekor {
+   padding-left: 16px;
+   padding-top: 11px;
+   padding-bottom: 11px;
+ }
+ .contact-franchise__coment--dekor {
+   padding-left: 16px;
+   padding-top: 11px;
+   padding-bottom: auto;
+   resize: none;
+ }
+ 
+ /* загальна кнопка */
+ 
+ .modal-btn-close {
+   cursor: pointer;
+   position: absolute;
+   width: 29px;
+   height: 29px;
+   border-radius: 15px;
+   border: solid #ffffff;
+   background: #ffffff;
+   top: 8px;
+   right: 8px;
+ }
+ 
+ .modal-btn-close__svgen-close {
+   position: absolute;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   transition-duration: 250ms;
+   transition-property: border, fill;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ 
+ /* відправка інформацій на регенстрацію */
+ 
+ .submitik {
+   width: 121px;
+   height: 42px;
+   left: 224px;
+   top: 594px;
+   background: #f8d24e;
+   border-radius: 10px;
+   border: none;
+   padding-left: auto;
+ 
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 1.21;
+ 
+   align-items: center;
+   text-align: center;
+ 
+   color: #131313;
+ 
+   margin-right: auto;
+   margin-left: auto;
+ }
+ 
+ /* media адаптація */
+ 
+ @media screen and (max-width: 767px) {
+   .contact__title {
+     font-size: 16px;
+     line-height: 1.5;
+     max-width: 221px;
+     margin-bottom: 20px;
+   }
+   .contact--decor {
+     width: 280px;
+     height: 674px;
+     padding: 28px;
+   }
+   .contact__text {
+     font-size: 14px;
+     line-height: 1.4;
+     margin-bottom: 24px;
+   }
+   .contact-franchise__nametelemaelcontact--dekor {
+     width: 224px;
+     height: 32px;
+     margin-bottom: 12px;
+   }
+   .contact-franchise__coment--dekor {
+     width: 224px;
+     height: 64px;
+     margin-bottom: 24px;
+   }
+ }
+ 
+ @media screen and (min-width: 768px) {
+   .contact__title {
+     font-size: 20px;
+     line-height: 1.5;
+     max-width: 322px;
+     margin-bottom: 24px;
+   }
+   .contact--decor {
+     width: 568px;
+     height: 668px;
+     padding: 32px 59px;
+   }
+   .contact__text {
+     font-size: 16px;
+     line-height: 1.4;
+     margin-bottom: 32px;
+   }
+   .contact-franchise__nametelemaelcontact--dekor {
+     width: 368px;
+     height: 42px;
+     margin-bottom: 16px;
+   }
+   .contact-franchise__coment--dekor {
+     width: 368px;
+     height: 84px;
+     margin-bottom: 32px;
+   }
+ }
+ 
+ .submitik:hover 
+ {
+   background: #0A8817;
+   }
+   .submitik:focus 
+ {
+   background: #0A8817;
+   color: #ffffff;
+   }
+   .submitik:disabled
+   {
+   background: #ABABAB;
+   }
+ 
