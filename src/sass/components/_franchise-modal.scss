@@ -5,7 +5,7 @@
    justify-content: center;
  }
  
- .conatact {
+ .contact {
    position: absolute;
    top: 50%;
    left: 50%;
@@ -23,7 +23,7 @@
  
  /* Заголоовок загальний */
  
- .conatact__title--decor {
+ .contact__title--decor {
    font-family: "Seymour One";
    font-style: normal;
    font-weight: 400;
@@ -35,7 +35,7 @@
  
  /* Текстовий блок */
  
- .conatact__paragraph--decor {
+ .contact__text--decor {
    font-family: "Montserrat";
    font-style: normal;
    font-weight: 400;
@@ -127,7 +127,7 @@
  /* media адаптація */
  
  @media screen and (max-width: 767px) {
-   .conatact__title {
+   .contact__title {
      font-size: 16px;
      line-height: 1.5;
      max-width: 221px;
@@ -138,7 +138,7 @@
      height: 674px;
      padding: 28px;
    }
-   .conatact__paragraph {
+   .contact__text {
      font-size: 14px;
      line-height: 1.4;
      margin-bottom: 24px;
@@ -156,7 +156,7 @@
  }
  
  @media screen and (min-width: 768px) {
-   .conatact__title {
+   .contact__title {
      font-size: 20px;
      line-height: 1.5;
      max-width: 322px;
@@ -167,7 +167,7 @@
      height: 668px;
      padding: 32px 59px;
    }
-   .conatact__paragraph {
+   .contact__text {
      font-size: 16px;
      line-height: 1.4;
      margin-bottom: 32px;
