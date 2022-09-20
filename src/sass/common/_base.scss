@@ -5,6 +5,10 @@ body {
   font-size: 12px;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,

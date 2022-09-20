@@ -10,20 +10,13 @@
   }
 }
 
-.contacts__section {
-  border-bottom: 1px solid rgba(225, 225, 225, 1);
-  padding-bottom: 24px;
-  padding-top: 24px;
-
-  &:last-child {
-    border-bottom: none;
-    padding-top: 24px;
-    padding-bottom: 0;
-  }
-}
-
 .branch__address {
-  padding-top: 0;
+  display: inline-block;
+  margin-bottom: 24px;
+
+  @include tablet {
+    margin-bottom: 32px;
+  }
 } 
 
 .branches__list {
@@ -63,24 +56,39 @@
   background-color: $accent-color; 
   color: $accent-text-color;
       
-  padding: 0 20px;
   width: max-content;
+  height: 16px;
+
   margin-bottom: 20px;
   border-radius: 4px;
+  text-align: center;
   
-  @include font (500, 3.75vw, 1.86, 0.04em);
+  @include font (500, 12px, 1.86, 0.04em);
   font-style: normal;
   text-transform: uppercase;
 
-  @include mobile {
-    font-size: 18px;
-  }
-
   @include tablet  {
     font-size: 16px;
-    padding: 0 10px;
+    height: 28px;
   }
 }
+
+.branch__category--cafe {
+  width: 80px;
+  
+  @include tablet  {
+    width: 73px;
+  }
+}
+
+.branch__category--foodtruck {
+  width: 130px;
+
+  @include tablet  {
+    width: 138px;
+  }
+}
+
 
 .branch__city  {
   color: $accent-text-color;
@@ -111,7 +119,6 @@
   &:hover,
   &:focus {
     text-decoration: underline;
-    cursor: pointer;
   }
 
   @include mobile {
@@ -127,6 +134,46 @@
   }
 }
 
+.branch__schedule {
+  display: inline-block;
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  position: relative;
+
+  @include tablet {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -24px;
+    height: 1px;
+    width: 100%;
+    background-color: #E1E1E1;
+
+    @include tablet {
+      bottom: -32px;
+    }
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -24px;
+    height: 1px;
+    width: 100%;
+    background-color: #E1E1E1;
+
+    @include tablet {
+      top: -32px;
+    }
+  }
+}
 
 .schedule__item {
   text-decoration: none;
@@ -171,6 +218,15 @@
   }
 }
 
+.branch__contacts {
+  display: inline-block;
+  margin-top: 24px;
+
+  @include tablet {
+    margin-top: 32px;
+  }
+}
+
 .contacts__link {
   @include font (500, 3.75vw, 1.5, null);
   color: $accent-text-color;
@@ -188,7 +244,6 @@
     font-size: 16px;
   }
 }
-
 
 .contacts__form {
   margin: 32px 0 auto;

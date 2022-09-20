@@ -1,1 +1,126 @@
-// Buy now modal styles
+// // Buy now modal styles
+
+.buy-now-modal {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.buy-now-modal__title {
+  font-family: $font-title;
+  color: $accent-text-color;
+  @include font(400, 5vw, 1.5, 0);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 85px;
+  @include mobile {
+    font-size: 24px;
+  }
+
+  @include tablet {
+    font-family: $font-title;
+    color: $accent-text-color;
+    @include font(400, 20px, 1.4, 0);
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.buy-now-modal__list {
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+}
+
+.buy-now-modal__item-ice,
+.buy-now-modal__item-coffee,
+.buy-now-modal__item-milk {
+  position: relative;
+  width: 132px;
+  height: 136px;
+  border-radius: 10px;
+}
+
+.buy-now-modal__item-ice {
+  border: 1px solid $hover-color;
+  margin-bottom: 85px;
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
+.buy-now-modal__item-coffee {
+  border: 1px solid $card-yellow-color;
+  background-color: $card-yellow-color;
+  margin-bottom: 85px;
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
+.buy-now-modal__item-milk {
+  border: 1px solid $card-brown-color;
+  margin-bottom: 25px;
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
+
+// фон под картинкой
+.buy-now-modal__item-ice-back,
+.buy-now-modal__item-coffee-back,
+.buy-now-modal__item-milk-back {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 65px;
+  left: 0;
+}
+.buy-now-modal__item-ice-back {
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+.buy-now-modal__item-coffee-back {
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+}
+.buy-now-modal__item-milk-back {
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+}
+
+.buy-now-moda__image {
+  position: absolute;
+  bottom: 73px;
+  left: 0;
+}
+.buy-now-moda__text {
+  position: absolute;
+  bottom: 20px;
+  left: 16px;
+  color: $accent-text-color;
+
+  font-family: $font-main;
+  @include font(700, 16px, 1.25, 0.04em);
+  text-align: center;
+  text-transform: uppercase;
+}
