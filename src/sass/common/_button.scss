@@ -8,7 +8,7 @@
     font-family: $font-main;
     @include font(600, 14px, 1.29, null);
     text-decoration: none;
-    cursor: pointer;
+    cursor: url(../images/cursor.png), url(../images/cursor-1.cur), default;
     &:hover {
       border-color: $hover-color;
     }
