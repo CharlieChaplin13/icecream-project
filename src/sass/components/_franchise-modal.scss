@@ -9,9 +9,9 @@
    position: absolute;
    top: 50%;
    left: 50%;
-   border: 2px solid #f8d24e;
+   border: 2px solid $accent-color;
    border-radius: 10px;
-   background-color: white;
+   background-color: $main-text-color;
    display: flex;
    flex-wrap: wrap;
    justify-items: center;
@@ -24,7 +24,7 @@
  /* Заголоовок загальний */
  
  .contact__title--decor {
-   font-family: "Seymour One";
+   font-family: $font-title;
    font-style: normal;
    font-weight: 400;
    text-align: center;
@@ -36,7 +36,7 @@
  /* Текстовий блок */
  
  .contact__text--decor {
-   font-family: "Montserrat";
+   font-family: $font-main;
    font-style: normal;
    font-weight: 400;
    display: flex;
@@ -56,7 +56,7 @@
    display: inline-flexbox;
    margin: 0;
    background: rgba(248, 210, 78, 0.1);
-   border: 1px solid #84a178;
+   border: 1px solid $background-color;
    border-radius: 10px;
  }
  
@@ -77,13 +77,13 @@
  /* загальна кнопка */
  
  .modal-btn-close {
-   cursor: pointer;
+   
    position: absolute;
    width: 29px;
    height: 29px;
    border-radius: 15px;
-   border: solid #ffffff;
-   background: #ffffff;
+   border: solid $main-text-color;
+   background: $main-text-color;
    top: 8px;
    right: 8px;
  }
@@ -104,12 +104,12 @@
    height: 42px;
    left: 224px;
    top: 594px;
-   background: #f8d24e;
+   background: $accent-color;
    border-radius: 10px;
    border: none;
    padding-left: auto;
  
-   font-family: "Montserrat";
+   font-family: $font-main;
    font-style: normal;
    font-weight: 600;
    font-size: 14px;
@@ -186,15 +186,15 @@
  
  .submitik:hover 
  {
-   background: #0A8817;
+   background: $hover-color;
    }
    .submitik:focus 
  {
-   background: #0A8817;
-   color: #ffffff;
+   background: $hover-color;
+   color: $main-text-color;
    }
    .submitik:disabled
    {
-   background: #ABABAB;
+   background: $disabled-color;
    }
  
