@@ -141,7 +141,7 @@ display: none;
 }
 
 .content-menu {
-    // display: none;
+    display: none;
     position: absolute;
     top: 100%;
     z-index: 1;
@@ -160,7 +160,7 @@ display: none;
 
 
     @include tablet { 
-    // display: none;   
+    display: none;  
     position: fixed;
     background-color: #84A178;
     top: 0%;
