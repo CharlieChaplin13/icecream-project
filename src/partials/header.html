@@ -1,8 +1,10 @@
-<header class="header">
+<header class="header section">
     <div class="header-container">
+        <div class="header-logo">
         <a href="./index.html" class="logo">
             <img src="./images/main-logo.png" alt="header logo"/>
         </a>
+        </div>
         <nav class="navigation">
     <ul class="navigation__list">
         <li class="navigation__item">
@@ -19,46 +21,52 @@
         </li>
     </ul>
         </nav>
-         <button type="button" class="menu-button is-open"
-         aria-expanded="false"
-         aria-controls="menu-container" 
-         data-menu-button>
-         <svg 
-         width="32" 
-         height="32"
-         aria-label="mobile menu switcher">
-          <use class="icon-close" href="./images/icons.svg#close-cross"></use>
-          <use class="menu-icon" href="./images/icons.svg#menu"></use>
-         </svg>
-         </button>
-         <div class="content-menu" id="content-menu" data-menu>
-            <ul class="content-menu__list">
-        
-                <li class="content-menu__item">
-                    <a href="" class="content-menu__link">Home</a>
-                </li>
-                <li class="content-menu__item">
-                    <a href="" class="content-menu__link">How it's made?</a>
-                </li>
-                <li class="content-menu__item">
-                    <a href="" class="content-menu__link">Our products</a>
-                </li>
-                <li class="content-menu__item">
-                    <a href="" class="content-menu__link">Contact</a>
-                </li>
-            </ul>
-            <div class="content-menu-btn">
-                <button type="button" class="menu-form-btn">Buy now
-                    <svg width="12" height="12">
-                    <use href="./images/icons.svg#arrow"></use>
-                    </svg>
-                </button>
-            </div>
-         </div>
-         <button type="button" class="navigation__button">Buy now
+        <button type="button" class="menu-open-btn" data-menu-open>
+            <svg width="32" height="32">
+            <use  href="./images/icons.svg#menu"></use>
+            </svg>
+        </button>
+        <div class="menu-btn">
+            <button type="button" class="navigation__button">Buy now
+                <svg width="12" height="12">
+                <use href="./images/icons.svg#arrow"></use>
+                </svg>
+            </button>
+           </div>
+    </div>
+    <div class="content-menu is-hidden" data-menu>
+        <div class="menu-logo">
+            <a href="./index.html" class="logo">
+                <img src="./images/main-logo.png" alt="header logo"/>
+            </a>
+        <button type="button" class="menu-close-btn" data-menu-close>
+            <svg width="32" height="32">
+            <use  href="./images/icons.svg#close-cross"></use>
+            </svg>
+        </button>
+    </div>
+        <nav class="content-menu__navigation">
+        <ul class="content-menu__list">
+            <li class="content-menu__item">
+                <a href="" class="content-menu__link">Home</a>
+            </li>
+            <li class="content-menu__item">
+                <a href="" class="content-menu__link">How it's made?</a>
+            </li>
+            <li class="content-menu__item">
+                <a href="" class="content-menu__link">Our products</a>
+            </li>
+            <li class="content-menu__item">
+                <a href="" class="content-menu__link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="mob-menu-btn">
+        <button type="button" class="mob-menu-btn__button">Buy now
             <svg width="12" height="12">
             <use href="./images/icons.svg#arrow"></use>
             </svg>
         </button>
-</div>
+       </div>
+    </div>
 </header>
