@@ -1,0 +1,2 @@
+var refs={openMenuBtn:document.querySelector("[data-menu-open]"),closeMenuBtn:document.querySelector("[data-menu-close]"),menu:document.querySelector("[data-menu]"),body:document.querySelector("body")};function toggleMenu(){refs.menu.classList.toggle("is-hidden"),refs.body.classList.toggle("no-scroll")}refs.openMenuBtn.addEventListener("click",toggleMenu),refs.closeMenuBtn.addEventListener("click",toggleMenu);
+//# sourceMappingURL=index.5f6363bd.js.map
