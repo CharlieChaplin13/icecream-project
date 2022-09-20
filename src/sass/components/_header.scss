@@ -129,6 +129,7 @@ display: none;
     margin-right: 26px;
     background-color: transparent;
     border: none;
+    fill: #FCFCFC;
 
     @include tablet {
         margin-right: 45px;
@@ -183,6 +184,7 @@ display: none;
     margin-right: 20px;
     background-color: transparent;
     border: none;
+    fill: #FCFCFC;
 
     @include tablet {
         display: flex;
