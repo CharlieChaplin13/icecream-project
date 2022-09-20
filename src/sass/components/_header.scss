@@ -142,8 +142,12 @@ display: none;
 
 .content-menu {
     // display: none;
-    position: fixed;
+    position: absolute;
+    top: 100%;
     z-index: 1;
+    left: 0;
+    width: 100%;
+    height: 100vh;
     background-color: #84A178;
     top: 0%;
     right: 0;
@@ -172,7 +176,7 @@ display: none;
     }
 }
 
-.menu-open-close {
+.menu-close-btn {
     display: flex;
     margin-left: auto;
     margin-top: 16px;
