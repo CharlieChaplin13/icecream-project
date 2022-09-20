@@ -73,7 +73,7 @@
   text-transform: uppercase;
 
   @include mobile {
-    font-size: 12px;
+    font-size: 18px;
   }
 
   @include tablet  {
@@ -84,10 +84,14 @@
 
 .branch__city  {
   color: $accent-text-color;
-  @include font (500, 12px, 1.86, 0.04em);
+  @include font (500, 3.75vw, 1.86, 0.04em);
   font-style: normal;
 
   margin-bottom: 8px;
+
+  @include mobile {
+    font-size: 18px;
+  }
 
   @include tablet {
     font-size: 14px;
@@ -111,7 +115,7 @@
   }
 
   @include mobile {
-    font-size: 12px;
+    font-size: 18px;
   }
 
   @include tablet {
@@ -138,7 +142,7 @@
   @include font (500, 3.75vw, 1.83, 0.04em);
 
   @include mobile {
-    font-size: 12px;
+    font-size: 18px;
   }
 
   @include tablet {
@@ -155,7 +159,7 @@
   color: $disabled-color;
 
   @include mobile {
-    font-size: 12px;
+    font-size: 18px;
   }
 
   @include tablet {
@@ -173,7 +177,7 @@
   text-decoration: none;
 
   @include mobile {
-    font-size: 12px;
+    font-size: 18px;
   }
 
   @include tablet {
