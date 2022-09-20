@@ -1,12 +1,15 @@
 .section__title {
-    color: $main-text-color;
-    font-family: $font-title;
-    @include font(400, 30px, 1.27, 0.04em);
-    text-align: center;
-    @include tablet {
-      @include font(400, 34px, 1.26, 0.06em);
-    }
-    @include desktop {
-      @include font(400, 36px, 1.25, 0.06em);
-    }
+  color: $main-text-color;
+  font-family: $font-title;
+  @include font(400, 9.37vw, 1.27, 0.04em);
+  text-align: center;
+  @include mobile {
+    @include font(400, 44px, 1.26, 0.06em);
   }
+  @include tablet {
+    @include font(400, 34px, 1.26, 0.06em);
+  }
+  @include desktop {
+    @include font(400, 36px, 1.25, 0.06em);
+  }
+}

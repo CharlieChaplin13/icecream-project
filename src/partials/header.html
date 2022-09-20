@@ -1,5 +1,5 @@
 <header class="header">
-    <div class="container">
+    <div class="header-container">
         <a href="./index.html" class="logo">
             <img src="./images/main-logo.png" alt="header logo"/>
         </a>
@@ -19,20 +19,46 @@
         </li>
     </ul>
         </nav>
-         <button type="button" class="adapt-menu-button is-open" 
+         <button type="button" class="menu-button is-open"
+         aria-expanded="false"
+         aria-controls="menu-container" 
          data-menu-button>
          <svg 
          width="32" 
          height="32"
          aria-label="mobile menu switcher">
-          <use class="icon-cross" href="./images/icons.svg#icon-close-button"></use>
-          <use class="menu-icon" href="./images/icons.svg#icon-Burger-3"></use>
+          <use class="icon-close" href="./images/icons.svg#close-cross"></use>
+          <use class="menu-icon" href="./images/icons.svg#menu"></use>
          </svg>
          </button>
-            <button type="button" class="navigation__button">Buy now
-                <svg width="12" height="12">
-                <use href="#"></use>
-                </svg>
-            </button>
+         <div class="content-menu" id="content-menu" data-menu>
+            <ul class="content-menu__list">
+        
+                <li class="content-menu__item">
+                    <a href="" class="content-menu__link">Home</a>
+                </li>
+                <li class="content-menu__item">
+                    <a href="" class="content-menu__link">How it's made?</a>
+                </li>
+                <li class="content-menu__item">
+                    <a href="" class="content-menu__link">Our products</a>
+                </li>
+                <li class="content-menu__item">
+                    <a href="" class="content-menu__link">Contact</a>
+                </li>
+            </ul>
+            <div class="content-menu-btn">
+                <button type="button" class="menu-form-btn">Buy now
+                    <svg width="12" height="12">
+                    <use href="./images/icons.svg#arrow"></use>
+                    </svg>
+                </button>
+            </div>
+         </div>
+         <button type="button" class="navigation__button">Buy now
+            <svg width="12" height="12">
+            <use href="./images/icons.svg#arrow"></use>
+            </svg>
+        </button>
 </div>
 </header>

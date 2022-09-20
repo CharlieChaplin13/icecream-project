@@ -1,1 +1,125 @@
-// Customer reviews section styles
+.review {
+  padding-top: 181px;
+  padding-bottom: 394px;
+  background-image: url(../images/customer-reviews/bg-mob.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f5f5f5;
+}
+
+.one-time {
+  width: 100%;
+  margin: 0 auto;
+  @media screen and(max-width:479px) {
+    max-width: 440px;
+  }
+  @include mobile {
+    width: 440px;
+  }
+  @include tablet {
+    width: 705px;
+  }
+  @include desktop {
+    width: 968px;
+  }
+}
+
+.slick-track {
+  display: flex;
+  gap: 10px;
+}
+
+.review__slider {
+  width: 100%;
+}
+
+.review__img {
+  width: 85px;
+  height: 85px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  @include tablet {
+    margin-bottom: 28px;
+  }
+  @include desktop {
+    margin-bottom: 32px;
+  }
+}
+
+.text-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 256px;
+  padding: 34px 39px;
+
+  background-color: $background-color;
+  border-radius: 10px;
+  margin-bottom: 30px;
+
+  @media screen and(max-width:479px) {
+    width: 100%;
+  }
+  @include tablet {
+    margin-bottom: 32px;
+    height: 138px;
+  }
+}
+
+.review__text {
+  line-height: 2.55;
+  font-weight: 400;
+  text-align: center;
+
+  @include tablet {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    padding: 29px 80px;
+  }
+  @include desktop {
+    font-size: 16px;
+    padding: 39px 109px 47px;
+  }
+}
+
+.review__contact {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+  text-align: center;
+  color: $accent-text-color;
+
+  @include tablet {
+    font-size: 16px;
+  }
+}
+
+// ПЕРЕОПРЕДЕЛЕНИЕ slick dots
+.slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+
+  font-size: 6px;
+  line-height: 20px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  text-align: center;
+}
+
+.slick-dots li.slick-active button:before {
+  background-color: #84a178;
+  opacity: 1;
+}
+
+.slick-dots {
+  bottom: -34px;
+}
