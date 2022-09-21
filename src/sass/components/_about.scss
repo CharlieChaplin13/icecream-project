@@ -91,20 +91,20 @@
   border-radius: 43.75vw;
 
   @include mobile {
-    width: 416px;
-    height: 416px;
-    border-radius: 208px;
+    width: 418px;
+    height: 418px;
+    border-radius: 206px;
   }
 
   @include tablet {
-    width: 334px;
-    height: 330px;
+    width: 335px;
+    height: 331px;
     border-radius: 166px;
     margin-bottom: 0;
   }
   @include desktop {
-    width: 500px;
-    height: 500px;
+    width: 490px;
+    height: 490px;
     border-radius: 250px;
   }
 }
@@ -113,6 +113,7 @@
   position: absolute;
   top: 22px;
   left: 0;
+  right: 0;
   @include tablet {
     top: 26px;
   }
