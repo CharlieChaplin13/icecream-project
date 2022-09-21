@@ -1,3 +1,4 @@
+// import $ from 'jquery';
 // import './js/header';
 // import './js/mobile-menu';
 // import './js/buy-now-modal-script';
