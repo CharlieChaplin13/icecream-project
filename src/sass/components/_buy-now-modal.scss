@@ -36,7 +36,6 @@
 }
 .buy-now-modal__item-coffee {
   border: 1px solid $card-yellow-color;
-  background-color: $card-yellow-color;
   margin-bottom: 85px;
   @include tablet {
     margin-bottom: 0;
@@ -67,31 +66,32 @@
   &:hover + .buy-now-modal__item-coffee,
   &:hover + .buy-now-modal__item-milk {
     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-  }
-
-  &:checked + .buy-now-modal__item-ice,
-  &:checked + .buy-now-modal__item-coffee,
-  &:checked + .buy-now-modal__item-milk {
-    box-shadow: 1px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
     transform: scale(1.1);
   }
+
   &:checked + .buy-now-modal__item-ice {
-    outline: 3px inset $hover-color;
+    background-color: $card-green-color;
+    transform: scale(1.1);
+    box-shadow: 1px 5.26027px 19.726px rgba(156, 190, 143, 0.7);
   }
 
   &:checked + .buy-now-modal__item-coffee {
-    outline: 3px inset $accent-color;
+    background-color: $card-yellow-color;
+    transform: scale(1.1);
+    box-shadow: 1px 5.26027px 19.726px rgba(248, 210, 78, 0.7);
   }
 
   &:checked + .buy-now-modal__item-milk {
-    outline: 3px inset $card-brown-color;
+    background-color: $card-brown-color;
+    transform: scale(1.1);
+    box-shadow: 1px 5.26027px 19.726px $card-brown-background;
   }
 }
 // фон под картинкой
 .buy-now-modal__item-ice-back,
 .buy-now-modal__item-coffee-back,
 .buy-now-modal__item-milk-back {
-  width: 127px;
+  width: 125px;
   height: 133px;
   border-radius: 50%;
   position: absolute;
@@ -99,30 +99,15 @@
   left: 0;
 }
 .buy-now-modal__item-ice-back {
-  background: linear-gradient(
-      0deg,
-      rgba(156, 190, 143, 0.7),
-      rgba(156, 190, 143, 0.7)
-    ),
-    #d9d9d9;
+  background: $card-green-background;
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 }
 .buy-now-modal__item-coffee-back {
-  background: linear-gradient(
-      0deg,
-      rgba(248, 210, 78, 0.7),
-      rgba(248, 210, 78, 0.7)
-    ),
-    #d9d9d9;
+  background: $card-yellow-background;
   box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
 }
 .buy-now-modal__item-milk-back {
-  background: linear-gradient(
-      0deg,
-      rgba(213, 117, 63, 0.7),
-      rgba(213, 117, 63, 0.7)
-    ),
-    #d9d9d9;
+  background: $card-brown-background;
   box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
 }
 
@@ -134,7 +119,7 @@
 .buy-now-moda__text {
   position: absolute;
   bottom: 20px;
-  left: 16px;
+  left: 11px;
   color: $accent-text-color;
   font-family: $font-main;
   @include font(700, 16px, 1.25, 0.04em);
