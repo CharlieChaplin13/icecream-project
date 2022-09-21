@@ -1,44 +1,4 @@
 // Read more modal styles
-.read-more-modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 87.5vw;
-  padding: 28px;
-  background: $main-text-color;
-  border: 1px solid $accent-color;
-  border-radius: 10px;
-  @include mobile {
-    width: 440px;
-  }
-
-  @include tablet {
-    width: 568px;
-    padding: 32px 60px;
-  }
-}
-
-.read-more-modal__button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  background-color: transparent;
-  border: none;
-  width: 16px;
-  height: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-
-  @include tablet {
-    top: 20px;
-    right: 20px;
-    width: 20px;
-    height: 20px;
-  }
-}
 
 .read-more-modal__icon {
   width: 9px;
@@ -46,27 +6,6 @@
   @include tablet {
     width: 12px;
     height: 12px;
-  }
-}
-
-.read-more-modal__title {
-  font-family: $font-title;
-  color: $accent-text-color;
-  @include font(400, 5vw, 1.5, 0);
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-  @include mobile {
-    font-size: 24px;
-  }
-
-  @include tablet {
-    font-family: $font-title;
-    color: $accent-text-color;
-    @include font(400, 20px, 1.4, 0);
-    display: flex;
-    align-items: center;
-    text-align: center;
   }
 }
 
@@ -83,17 +22,7 @@
 }
 
 .read-more-modal__text {
-  font-family: $font-main;
-  color: $accent-text-color;
-  @include font(400, 4.4vw, 1.4, 0);
-
-  @include mobile {
-    // width: 318px;
-    font-size: 21px;
-  }
   @include tablet {
-    font-family: $font-main;
-    font-size: 16px;
     width: 448px;
   }
 }

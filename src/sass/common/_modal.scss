@@ -1,0 +1,119 @@
+// стилі для кнопки закриття
+.modal__button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: transparent;
+  border: none;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 50%;
+
+  @include tablet {
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+  }
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+  }
+  &:focus {
+    color: $main-text-color;
+  }
+  &:disabled {
+    background: $disabled-color;
+  }
+}
+
+// форма модалки
+.modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 28px;
+  background: $main-text-color;
+  border: 2px solid $accent-color;
+  border-radius: 10px;
+  // ширина при респонсиві
+  width: 87.5vw;
+  @include mobile {
+    width: 440px;
+  }
+
+  @include tablet {
+    width: 568px;
+    padding: 32px 60px;
+  }
+}
+
+// заголовок
+.modal__title {
+  font-family: $font-title;
+  color: $accent-text-color;
+  @include font(400, 5vw, 1.5, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  @include mobile {
+    font-size: 24px;
+  }
+  @include tablet {
+    @include font(400, 20px, 1.4, 0);
+    display: flex;
+  }
+}
+
+// параграфи модалки
+.modal__text {
+  font-family: $font-main;
+  color: $accent-text-color;
+  @include font(400, 4.4vw, 1.4, 0);
+
+  @include mobile {
+    font-size: 21px;
+  }
+  @include tablet {
+    font-family: $font-main;
+    font-size: 16px;
+  }
+}
+
+// форма модалки
+
+.input-modal-window {
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid $background-color;
+  border-radius: 10px;
+  padding: 11px;
+  width: 100%;
+  &::placeholder {
+    font-family: $font-main;
+    color: $accent-text-color;
+  }
+}
+
+.form__error {
+  color: red;
+  text-align: left;
+  font-size: 12px;
+  display: block;
+  display: none;
+}
+input:valid:not(:placeholder-shown) {
+  border-color: $hover-color;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+input:invalid:not(:placeholder-shown) + .form__error {
+  display: block;
+}

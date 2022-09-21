@@ -1,1 +1,192 @@
-// Buy now modal styles
+// // Buy now modal styles
+
+.buy-now-modal__title {
+  margin-bottom: 85px;
+}
+
+.buy-now-modal__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+
+  @include tablet {
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+}
+
+.buy-now-modal__item-ice,
+.buy-now-modal__item-coffee,
+.buy-now-modal__item-milk {
+  position: relative;
+  width: 132px;
+  height: 136px;
+  border-radius: 10px;
+}
+
+.buy-now-modal__item-ice {
+  border: 1px solid $hover-color;
+  margin-bottom: 85px;
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
+.buy-now-modal__item-coffee {
+  border: 1px solid $card-yellow-color;
+  background-color: $card-yellow-color;
+  margin-bottom: 85px;
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
+.buy-now-modal__item-milk {
+  border: 1px solid $card-brown-color;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
+
+// чекбокси
+.buy-now__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  &:focus + .buy-now-modal__item-ice,
+  &:focus + .buy-now-modal__item-coffee,
+  &:focus + .buy-now-modal__item-milk,
+  &:hover + .buy-now-modal__item-ice,
+  &:hover + .buy-now-modal__item-coffee,
+  &:hover + .buy-now-modal__item-milk {
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  }
+
+  &:checked + .buy-now-modal__item-ice,
+  &:checked + .buy-now-modal__item-coffee,
+  &:checked + .buy-now-modal__item-milk {
+    box-shadow: 1px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    transform: scale(1.1);
+  }
+  &:checked + .buy-now-modal__item-ice {
+    outline: 3px inset $hover-color;
+  }
+
+  &:checked + .buy-now-modal__item-coffee {
+    outline: 3px inset $accent-color;
+  }
+
+  &:checked + .buy-now-modal__item-milk {
+    outline: 3px inset $card-brown-color;
+  }
+}
+// фон под картинкой
+.buy-now-modal__item-ice-back,
+.buy-now-modal__item-coffee-back,
+.buy-now-modal__item-milk-back {
+  width: 127px;
+  height: 133px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 65px;
+  left: 0;
+}
+.buy-now-modal__item-ice-back {
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+.buy-now-modal__item-coffee-back {
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+}
+.buy-now-modal__item-milk-back {
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+}
+
+.buy-now-moda__image {
+  position: absolute;
+  bottom: 73px;
+  left: 0;
+}
+.buy-now-moda__text {
+  position: absolute;
+  bottom: 20px;
+  left: 16px;
+  color: $accent-text-color;
+  font-family: $font-main;
+  @include font(700, 16px, 1.25, 0.04em);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+// форма
+.buy-now-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.buy-now-form__name,
+.buy-now-form__tel,
+.buy-now-form__comment {
+  &::placeholder {
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
+.buy-now-form__name,
+.buy-now-form__tel {
+  height: 42px;
+  margin-bottom: 16px;
+}
+.buy-now-form__comment {
+  height: 84px;
+  margin-bottom: 32px;
+  resize: none;
+}
+.buy-now-form__btn {
+  padding: 12px 34px;
+  margin: 0 auto;
+  border: transparent;
+  background-color: $accent-color;
+  width: 114px;
+  height: 42px;
+  font-weight: 700;
+  &:hover {
+    background-color: $hover-color;
+  }
+  &:focus {
+    background-color: $hover-color;
+    outline: $hover-color;
+  }
+  &:disabled {
+    background-color: $disabled-color;
+  }
+  @include tablet {
+    width: 121px;
+  }
+}
