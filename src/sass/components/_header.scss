@@ -1,5 +1,12 @@
+
+
 .header {
-    position: relative;
+    // position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #84A178;
+    z-index: 100;
 }
 
 .header-container {
@@ -7,7 +14,7 @@
 }
 
 .header-logo {
-    margin-top: 12px;
+    // margin-top: 12px;
     margin-left: 22.35px;
 
     @include tablet {
@@ -16,7 +23,6 @@
     }
     @include desktop {
     margin-right: 269px;
-    padding-top: 8px;
     }
 }
 
@@ -31,7 +37,6 @@ display: none;
     display: inline-flex;
     align-items: center;
     gap: 25px;
-    margin-top: 40px;
     }
 }
 
@@ -105,7 +110,6 @@ display: none;
     @include desktop {
     display: block;
     margin-left: auto;
-    margin-top: 28px;
     font-size: 14px;
     font-weight: 600;
     width: 152px;
@@ -128,7 +132,7 @@ display: none;
     border: none;
 
     @include tablet {
-        margin-right: 45px;
+        margin-right: 32px;
         margin-left: auto;
         margin-top: 39px;
     }
