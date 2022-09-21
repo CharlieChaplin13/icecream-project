@@ -3,9 +3,9 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  border: 2px solid #f8d24e;
+  border: 2px solid $accent-color;
   border-radius: 10px;
-  background-color: white;
+  background-color: $main-text-color;
   display: flex;
   flex-wrap: wrap;
   justify-items: center;
@@ -74,7 +74,7 @@
 /* Заголоовок загальне оформлення  */
 
 .contact__title--decor {
-  font-family: 'Seymour One';
+  font-family: $font-title;
   font-style: normal;
   font-weight: 400;
   text-align: center;
@@ -87,7 +87,7 @@
 /* загальна кнопка */
 
 .modal-btn-close {
-  cursor: pointer;
+  
   position: absolute;
   width: 29px;
   height: 29px;
@@ -112,12 +112,12 @@
   height: 42px;
   left: 224px;
   top: 594px;
-  background: #f8d24e;
+  background: $accent-color;
   border-radius: 10px;
   border: none;
   padding-left: auto;
 
-  font-family: 'Montserrat';
+  font-family: $font-main;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -132,7 +132,7 @@
   margin-left: auto;
 
   display: flex;
-  cursor: pointer;
+  
   text-decoration: none;
   padding-top: 10px;
   padding-bottom: 13px;
@@ -140,12 +140,12 @@
 }
 
 .submitik-map:hover {
-  background: #0a8817;
+  background: $hover-color;
 }
 .submitik-map:focus {
-  background: #0a8817;
-  color: #ffffff;
+  background: $hover-color;
+  color: $main-text-color;
 }
 .submitik-map:disabled {
-  background: #ababab;
+  background: $disabled-color;
 }
