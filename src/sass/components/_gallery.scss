@@ -1,1 +1,47 @@
-// Gallery section styles
+.container--gallery {
+  position: relative;
+}
+
+.gallery__list {
+  margin: 0 auto;
+}
+
+.gallery__item {
+  position: absolute;
+  display: none;
+
+  &--mob {
+    @media screen and(max-width:767px) {
+      width: 90%;
+      left: 20px;
+      bottom: -106px;
+      display: block;
+    }
+  }
+
+  &--tab {
+    @media screen and(min-width:768px) and(max-width:1199px) {
+      display: block;
+      left: 34px;
+      bottom: -163px;
+    }
+  }
+
+  &--desk {
+    @media screen and(min-width:1200px) {
+      display: block;
+      left: 93px;
+      bottom: -321px;
+    }
+  }
+}
+
+// .gallery__img--mob {
+//   width: 100%;
+//   min-width: 279px;
+// }
+
+.gallery__img {
+  height: 422px;
+  border-radius: 20px;
+}
