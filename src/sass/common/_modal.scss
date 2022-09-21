@@ -99,3 +99,21 @@
     color: $accent-text-color;
   }
 }
+
+.form__error {
+  color: red;
+  text-align: left;
+  font-size: 12px;
+  display: block;
+  display: none;
+}
+input:valid:not(:placeholder-shown) {
+  border-color: $hover-color;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+input:invalid:not(:placeholder-shown) + .form__error {
+  display: block;
+}
