@@ -1,12 +1,24 @@
-.up-scroll__button {
-    position: absolute;
-    left: 100px;
-    bottom: 100px;
+// .up-scroll {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     // position: relative;
+//     width: 100vw;
+//     height: 100vw;
+//     background-color: transparent;
+// }
+
+.up-scroll__link {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
     transform: translate(-50%, -50%) scale(0);
+    width: 30px;
+    height: 50px;
     background-color: aqua;
     color: black;
     opacity: 0.5;
-    z-index: 200;
+    z-index: 10000;
     &:hover,
     &:focus {
         background-color: aquamarine;
