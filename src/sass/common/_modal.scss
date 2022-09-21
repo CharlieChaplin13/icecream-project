@@ -89,7 +89,7 @@
 // форма модалки
 
 .input-modal-window {
-  background: rgba(248, 210, 78, 0.1);
+  background: $form-input-background;
   border: 1px solid $background-color;
   border-radius: 10px;
   padding: 11px;
@@ -101,7 +101,7 @@
 }
 
 .form__error {
-  color: red;
+  color: rgb(218, 19, 19);
   text-align: left;
   font-size: 12px;
   display: block;
@@ -112,7 +112,7 @@ input:valid:not(:placeholder-shown) {
 }
 
 input:invalid:not(:placeholder-shown) {
-  border-color: red;
+  border-color: rgb(218, 19, 19);
 }
 input:invalid:not(:placeholder-shown) + .form__error {
   display: block;
