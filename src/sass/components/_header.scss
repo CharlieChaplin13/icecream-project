@@ -140,10 +140,9 @@ display: none;
 
 
 .content-menu {
-    display: none;
     position: absolute;
     top: 0%;
-    z-index: 1;
+    z-index: 5;
     left: 0;
     width: 100%;
     height: 100vh;
@@ -158,7 +157,6 @@ display: none;
     color: #FCFCFC;
 
     @include tablet { 
-    display: none;  
     position: fixed;
     background-color: #84A178;
     top: 0%;
