@@ -1,3 +1,22 @@
+.modal {
+  position: absolute;
+  
+    .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0);
+  }
+    @include mobile {
+      margin: 20px auto;
+    }
+
+    @include tablet {
+      margin: 40px auto;
+    }
+
+    @include desktop {
+      margin: 50px auto;
+    }
+}
+
 // стилі для кнопки закриття
 .modal__button-close {
   position: absolute;
