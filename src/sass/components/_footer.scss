@@ -126,9 +126,19 @@ margin-bottom: 16px;
     color: $main-text-color;
     margin-left: 5px;
 }
-.footer__rights{
-    padding: 16px 20px ;
+.rights{
+    padding: 16px 20px 0;
+    position: relative;
 
+    @include tablet {
+            padding: 16px 20px 0;
+        }
+    
+        @include desktop {
+            padding: 16px 20px 0 ;
+        }
+}
+.footer--rights{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
@@ -141,7 +151,7 @@ margin-bottom: 16px;
     @include tablet {
         @include font(700, 14px, 1.86, 0.02em);
 
-            padding: 14px 20px;
+        
 
             margin-left: auto;
             margin-right: auto;
@@ -149,13 +159,17 @@ margin-bottom: 16px;
     @include desktop {
         @include font(700, 12px, 1.86, 0.02em);
 
-        padding: 12px 20px 11px;
+        
     }
 }
 
-.footer__rights::before{
-    content:'';
-    color: #E1E1E1;
-    height: 2px;
-    width: 1000vw;
+.rights::before {
+  display: inline-block;
+  left: -50%;
+  position: absolute;
+  content: '';
+  background-color: #e1e1e1;
+  height: 2px;
+  top: 0;
+  width: 1000vw;
 }

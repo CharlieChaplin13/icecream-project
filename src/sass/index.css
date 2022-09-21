@@ -2201,8 +2201,22 @@ footer {
   margin-left: 5px;
 }
 
-.footer__rights {
-  padding: 16px 20px;
+.rights {
+  padding: 16px 20px 0;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .rights {
+    padding: 16px 20px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .rights {
+    padding: 16px 20px 0;
+  }
+}
+
+.footer--rights {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
@@ -2214,29 +2228,31 @@ footer {
   color: #7A7A7A;
 }
 @media screen and (min-width: 768px) {
-  .footer__rights {
+  .footer--rights {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.86;
     letter-spacing: 0.02em;
-    padding: 14px 20px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer__rights {
+  .footer--rights {
     font-weight: 700;
     font-size: 12px;
     line-height: 1.86;
     letter-spacing: 0.02em;
-    padding: 12px 20px 11px;
   }
 }
 
-.footer__rights::before {
+.rights::before {
+  display: inline-block;
+  left: -50%;
+  position: absolute;
   content: "";
-  color: #E1E1E1;
+  background-color: #e1e1e1;
   height: 2px;
+  top: 0;
   width: 1000vw;
 }/*# sourceMappingURL=index.css.map */
