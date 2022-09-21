@@ -40,7 +40,13 @@
   }
   &:hover,
   &:focus {
-    background-color: $accent-color;
+    background-color: $hover-color;
+  }
+  &:focus {
+    color: $main-text-color;
+  }
+  &:disabled {
+    background: $disabled-color;
   }
 }
 
@@ -52,7 +58,7 @@
   transform: translate(-50%, -50%);
   padding: 28px;
   background: $main-text-color;
-  border: 1px solid $accent-color;
+  border: 2px solid $accent-color;
   border-radius: 10px;
   // ширина при респонсиві
   width: 87.5vw;
@@ -111,4 +117,22 @@
     font-family: $font-main;
     color: $accent-text-color;
   }
+}
+
+.form__error {
+  color: red;
+  text-align: left;
+  font-size: 12px;
+  display: block;
+  display: none;
+}
+input:valid:not(:placeholder-shown) {
+  border-color: $hover-color;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+input:invalid:not(:placeholder-shown) + .form__error {
+  display: block;
 }

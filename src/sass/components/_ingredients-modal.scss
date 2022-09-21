@@ -1,16 +1,8 @@
 .ingredients {
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
-    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
     min-height: 990px;
-    background: $main-text-color;
-    border: 2px solid $accent-color;
-    border-radius: 10px;
-    padding: 28px 20px 32px;
     margin: 0 auto;
     justify-content: space-between;
 }
@@ -18,20 +10,6 @@
     position: absolute;
     top: 28px;
     right: 20px;
-}
-.ingredients__main-title {
-    width: 142px;
-    font-family: $font-title;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 6.25vw;
-    line-height: 1.4;
-    display: flex;
-    text-align: center;
-    color: $accent-text-color;
-    margin-bottom: 22px;
-    margin-left: auto;
-    margin-right: auto;
 }
 .ingredients__img {
     position: relative;
@@ -47,7 +25,7 @@
         content: '';
         width: 131px;
         height: 131px;
-        background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+        background: $card-green-background;
         box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
         border-radius: 50%;
         bottom: -7px;
@@ -70,17 +48,18 @@
     height: 72px;
     align-items: center;
     text-align: center;
-    border: 2px solid #9CBE8F;
+    border: 2px solid $card-green-color;
     border-radius: 40px;
     padding-top: 6px;
     padding-bottom: 6px;
+    margin-bottom: 40px;
     &::after {
         position: absolute;
         content: '';
         width: 43px;
         height: 43px;
-        background: #9CBE8F;
-        border: 2px solid #9CBE8F;
+        background: $card-green-color;
+        border: 2px solid $card-green-color;
         box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
         border-radius: 50%;
         top: -2px;
@@ -90,7 +69,6 @@
 .ingredients-nutrients__numeric {
     z-index: 3;
     font-family: $font-main;
-    font-style: normal;
     font-weight: 500;
     font-size: 10px;
     line-height: 2.8;
@@ -98,8 +76,6 @@
 }
 .ingredients-nutrients__text {
     font-family: $font-main;
-    font-style: normal;
-    font-weight: 400;
     font-size: 10px;
     line-height: 2.8;
     display: flex;
@@ -107,7 +83,6 @@
 }
 .ingredients__title {
     font-family: $font-main;
-    font-style: normal;
     font-weight: 500;
     font-size: 6.25vw;
     line-height: 1.4;
@@ -129,36 +104,15 @@
 }
 .ingredients__product,
 .ingredients__weight {
-    font-family: $font-main;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 4,375vw;
     line-height: 176%;
     align-items: center;
     text-align: center;
-    letter-spacing: 0.04em;
-    color: $accent-text-color;
 }
 .ingredients-form {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     width: 100%;
-}
-.ingredients-form__name,
-.ingredients-form__tel,
-.ingredients-form__comment {
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid #84A178;
-    border-radius: 10px;
-    padding: 11px;
-    width: 100%;
-    &::placeholder {
-        font-family: $font-main;
-        font-size: 14px;
-        line-height: 140%;
-        color: $accent-text-color;
-    }
 }
 .ingredients-form__name,
 .ingredients-form__tel {
