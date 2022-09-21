@@ -5,27 +5,17 @@
   flex-direction: column;
   align-content: center;
   align-items: center;
+  // width: 100%;
+  // height: 90%;
+  transform: translate(-50%, -50%);
+  @include tablet {
+    transform: translate(-50%, -50%);
+    // height: 644px;
+  }
 }
 
 .buy-now-modal__title {
-  font-family: $font-title;
-  color: $accent-text-color;
-  @include font(400, 5vw, 1.5, 0);
-  display: flex;
-  justify-content: center;
   margin-bottom: 85px;
-  @include mobile {
-    font-size: 24px;
-  }
-
-  @include tablet {
-    font-family: $font-title;
-    color: $accent-text-color;
-    @include font(400, 20px, 1.4, 0);
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
 }
 
 .buy-now-modal__list {
@@ -69,6 +59,31 @@
   }
 }
 
+// чекбокси
+.buy-now__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  &:focus + .buy-now-modal__item-ice,
+  &:focus + .buy-now-modal__item-coffee,
+  &:focus + .buy-now-modal__item-milk,
+  &:hover + .buy-now-modal__item-ice,
+  &:hover + .buy-now-modal__item-coffee,
+  &:hover + .buy-now-modal__item-milk {
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  }
+
+  &:checked + .buy-now-modal__item-ice,
+  &:checked + .buy-now-modal__item-coffee,
+  &:checked + .buy-now-modal__item-milk {
+    transform: scale(1.1);
+  }
+}
 // фон под картинкой
 .buy-now-modal__item-ice-back,
 .buy-now-modal__item-coffee-back,
@@ -118,9 +133,57 @@
   bottom: 20px;
   left: 16px;
   color: $accent-text-color;
-
   font-family: $font-main;
   @include font(700, 16px, 1.25, 0.04em);
   text-align: center;
   text-transform: uppercase;
+}
+
+// форма
+.buy-now-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.buy-now-form__name,
+.buy-now-form__tel,
+.buy-now-form__comment {
+  &::placeholder {
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
+.buy-now-form__name,
+.buy-now-form__tel {
+  height: 42px;
+  margin-bottom: 16px;
+}
+.buy-now-form__comment {
+  height: 84px;
+  margin-bottom: 32px;
+  resize: none;
+}
+.buy-now-form__btn {
+  padding: 12px 34px;
+  margin: 0 auto;
+  border: transparent;
+  background-color: $accent-color;
+  width: 114px;
+  height: 42px;
+  font-weight: 700;
+  &:hover {
+    background-color: $hover-color;
+  }
+  &:focus {
+    background-color: $hover-color;
+    outline: $hover-color;
+  }
+  &:disabled {
+    background-color: $disabled-color;
+  }
+  @include tablet {
+    width: 121px;
+  }
 }
