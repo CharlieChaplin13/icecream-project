@@ -24,8 +24,8 @@
 .gallery__item {
   position: absolute;
   display: none;
-
   border-radius: 20px;
+  pointer-events: none;
 
   &--mob {
     @media screen and(max-width:479px) {
@@ -34,7 +34,6 @@
       bottom: -106px;
     }
     @media screen and(min-width:480px) and(max-width:767px) {
-      // width: 460px;
       left: 20px;
       bottom: -106px;
     }
@@ -54,11 +53,6 @@
     }
   }
 }
-
-// .gallery__img--mob {
-//   width: 100%;
-//   min-width: 279px;
-// }
 
 .gallery__img {
   border-radius: 8px;

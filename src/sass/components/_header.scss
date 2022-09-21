@@ -95,6 +95,8 @@ display: none;
 
     @include tablet {
     display: flex;
+    align-items: center;
+    justify-content: center;
     // margin-top: 24px;
     font-size: 14px;
     font-weight: 600;
@@ -106,24 +108,39 @@ display: none;
     fill: $accent-text-color;
     border-radius: 10px;
     border: none;
+    margin-left: auto;
+    margin-right: auto;
+
+    //     padding-left: 6px;
+    //     cursor: pointer;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //     margin-top: 20px;
+    //   }
     }
 
     @include desktop {
-    display: block;
-    margin-left: auto;
-    font-size: 14px;
-    font-weight: 600;
-    width: 152px;
-    height: 42px;
-    padding: 12px 34px 12px 34px;
-    background-color: $accent-color;
-    color: $accent-text-color;
-    fill: $accent-text-color;
-    border-radius: 10px;
-    border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // margin-top: 24px;
+        font-size: 14px;
+        font-weight: 600;
+        width: 152px;
+        height: 42px;
+        padding: 12px 34px 12px 34px;
+        background-color: $accent-color;
+        color: $accent-text-color;
+        fill: $accent-text-color;
+        border-radius: 10px;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
-
+.nav-btn-icon {
+    margin-left: 7.23px;
+}
 
 .menu-open-btn {
     margin-left: auto;
@@ -156,8 +173,10 @@ display: none;
     align-items: center;
     font-weight: 700;
     color: $main-text-color;
-    transform: translateX() (-100%);
-    transition: transform 400ms linear;
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 400ms linear, opacity 400ms linear;
+    
 
 
     @include tablet { 
@@ -169,6 +188,9 @@ display: none;
     height: 100vh;
     font-weight: 700;
     color: $main-text-color;
+    transform: translateX(0%);
+    opacity: 1;
+    transition: transform 400ms linear, opacity 400ms linear;
     }
 
 
@@ -226,17 +248,22 @@ color: $accent-text-color;
 
 .mob-menu-btn__button {
     display: flex;
-    margin-top: 24px;
-    font-family: inherit;
+    margin-left: auto;
     font-size: 14px;
     font-weight: 600;
     width: 152px;
     height: 42px;
-    padding: 12px 34px 12px 34px;
+    // padding: 12px 34px 12px 34px;
     background-color: $accent-color;
     color: $accent-text-color;
+    fill: $accent-text-color;
     border-radius: 10px;
     border: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
 
     @include tablet {
         display: none;
@@ -260,3 +287,12 @@ color: $accent-text-color;
     color: $accent-text-color;
     fill: $accent-text-color;
 }
+
+.content-menu.is-hidden {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 400ms linear, opacity 400ms linear;
+    
+}
+
+
