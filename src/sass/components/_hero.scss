@@ -117,6 +117,7 @@
     height: 24px;
     padding: 10px 7px;
     margin-top: 32px;
+    z-index: 999;
     font-family: inherit;
     font-weight: 600;
     font-size: 8px;
@@ -159,6 +160,7 @@
     margin-left: 8px;
     height: 24px;
     padding: 10px 7px;
+    z-index: 999;
     font-weight: 600;
     font-size: 8px;
     line-height: 1.25;
@@ -170,6 +172,7 @@
     background-color: transparent;
     color: $accent-color;
     text-decoration: underline;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
         color: $hover-color;
     }
@@ -201,7 +204,7 @@
 .hero__many--ice {
     margin-top: 28px;
     margin-bottom: 14px;
-    z-index: 2;
+    z-index: 999;
     animation-name: spin;
     animation-duration: 3s;
     animation-timing-function: linear;
@@ -232,7 +235,6 @@
         }
 }
 
-
 .hero__text {
     margin-top: 56px;
     margin-left: 33px;
@@ -259,6 +261,7 @@
     margin-top: 10px;
     width: 40px;
     height: 22px;
+    z-index: 999;
     border: transparent;
     background-color: inherit;
     padding: 0;
@@ -302,13 +305,14 @@
     fill: $main-text-color;
 }
 
-
 .hero__dots {
     position: absolute;
     width: 100vw;
     min-width: 328px;
     left: 0;
     bottom: 0;
+    pointer-events: none;
+    z-index: -1;
 
          @media screen and (max-width: 480px) {
              width: 100vw;
@@ -318,6 +322,25 @@
         width: 1200px;
         
     }
+
+        animation-name: blinking;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+    
+        @keyframes blinking {
+            0% {
+                opacity: 1;
+            }
+    
+            50% {
+                opacity: 0.15;
+            }
+    
+            100% {
+                opacity: 1;
+            }
+        }
 }
 
 .hero__ice {
@@ -327,6 +350,7 @@
     bottom: -0.6px;
     left: 56%;
     transform: translate(-50%, 0);
+    pointer-events: none;
 
     @media screen and (min-width: 480px) and (max-width: 767px) {
         width: 100vw;
