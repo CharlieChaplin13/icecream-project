@@ -1,5 +1,10 @@
 .header {
-    position: relative;
+    // position: relative;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: transparent;
 }
 
 .header-container {
@@ -7,16 +12,16 @@
 }
 
 .header-logo {
-    margin-top: 12px;
+    // margin-top: 12px;
     margin-left: 22.35px;
 
     @include tablet {
-    margin-top: 20px;
+    // margin-top: 20px;
     margin-left: 34.78px;
     }
     @include desktop {
     margin-right: 269px;
-    padding-top: 8px;
+    // padding-top: 8px;
     }
 }
 
@@ -31,7 +36,7 @@ display: none;
     display: inline-flex;
     align-items: center;
     gap: 25px;
-    margin-top: 40px;
+    // margin-top: 40px;
     }
 }
 
@@ -90,30 +95,36 @@ display: none;
 
     @include tablet {
     display: flex;
-    margin-top: 24px;
+    // margin-top: 24px;
     font-size: 14px;
     font-weight: 600;
     width: 152px;
     height: 42px;
     padding: 12px 34px 12px 34px;
+    align-items: center;
+    text-align: center;
     background-color: #F8D24E;
     color: #131313;
+    fill: currentColor;
     border-radius: 10px;
     border: none;
     }
 
     @include desktop {
-    display: block;
+        display: flex;
+    // display: block;
     margin-left: auto;
-    margin-top: 28px;
+    // margin-top: 28px;
     font-size: 14px;
     font-weight: 600;
     width: 152px;
     height: 42px;
     padding: 12px 34px 12px 34px;
+    align-items: center;
+    text-align: center;
     background-color: #F8D24E;
     color: #131313;
-    fill:  #131313;
+    fill:  currentColor;
     border-radius: 10px;
     border: none;
     }
@@ -128,9 +139,9 @@ display: none;
     border: none;
 
     @include tablet {
-        margin-right: 45px;
+        margin-right: 32px;
         margin-left: auto;
-        margin-top: 39px;
+        // margin-top: 39px;
     }
 
     @include desktop {
@@ -219,6 +230,9 @@ display: none;
     margin-top: 111px;
     padding-bottom: 63px;
 }
+.btn-icon {
+    margin-left: 8px;
+}
 
 .mob-menu-btn__button {
     display: flex;
@@ -229,8 +243,11 @@ display: none;
     width: 152px;
     height: 42px;
     padding: 12px 34px 12px 34px;
+    align-items: center;
+    text-align: center;
     background-color: #F8D24E;
     color: #131313;
+    fill: currentColor;
     border-radius: 10px;
     border: none;
 
