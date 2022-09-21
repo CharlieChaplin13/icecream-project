@@ -1,12 +1,12 @@
 
 
 .header {
-    // position: relative;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #84A178;
-    z-index: 100;
+    position: relative;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // background-color: $background-color;
+    // z-index: 100;
 }
 
 .header-container {
@@ -15,11 +15,11 @@
 
 .header-logo {
     // margin-top: 12px;
-    margin-left: 22.35px;
+    // margin-left: 22.35px;
 
     @include tablet {
-    margin-top: 20px;
-    margin-left: 34.78px;
+    // margin-top: 20px;
+    // margin-left: 32px;
     }
     @include desktop {
     margin-right: 269px;
@@ -48,7 +48,7 @@ display: none;
     }
 
 .navigation__link {
-    color: #FCFCFC;
+    color: $main-text-color;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -57,7 +57,7 @@ display: none;
 
 .navigation__link:hover,
 .navigation__link:focus {
-    color: #F8D24E;
+    color: $accent-color;
 }
 
 .menu-logo {
@@ -95,14 +95,15 @@ display: none;
 
     @include tablet {
     display: flex;
-    margin-top: 24px;
+    // margin-top: 24px;
     font-size: 14px;
     font-weight: 600;
     width: 152px;
     height: 42px;
     padding: 12px 34px 12px 34px;
-    background-color: #F8D24E;
-    color: #131313;
+    background-color: $accent-color;
+    color: $accent-text-color;
+    fill: $accent-text-color;
     border-radius: 10px;
     border: none;
     }
@@ -115,9 +116,9 @@ display: none;
     width: 152px;
     height: 42px;
     padding: 12px 34px 12px 34px;
-    background-color: #F8D24E;
-    color: #131313;
-    fill:  #131313;
+    background-color: $accent-color;
+    color: $accent-text-color;
+    fill: $accent-text-color;
     border-radius: 10px;
     border: none;
     }
@@ -127,14 +128,14 @@ display: none;
 .menu-open-btn {
     margin-left: auto;
     margin-top: 26px;
-    margin-right: 26px;
+    // margin-right: 26px;
     background-color: transparent;
     border: none;
 
     @include tablet {
         margin-right: 32px;
         margin-left: auto;
-        margin-top: 39px;
+        // margin-top: 39px;
     }
 
     @include desktop {
@@ -150,7 +151,7 @@ display: none;
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: #84A178;
+    background-color: $background-color;
     top: 0%;
     right: 0;
     width: 100vw;
@@ -158,17 +159,17 @@ display: none;
     text-align: center;
     align-items: center;
     font-weight: 700;
-    color: #FCFCFC;
+    color: $main-text-color;
 
     @include tablet { 
     position: fixed;
-    background-color: #84A178;
+    background-color: $background-color;
     top: 0%;
     right: 0;
     width: 100%;
     height: 100vh;
     font-weight: 700;
-    color: #FCFCFC;
+    color: $main-text-color;
     }
 
 
@@ -204,7 +205,7 @@ display: none;
     margin-top: 32px;
     font-size: 32px;
     font-weight: 700;
-    color: #FCFCFC;
+    color: $main-text-color;
 
     @include tablet {
         margin-top: 40px;
@@ -214,7 +215,7 @@ display: none;
 
 .content-menu__link:hover,
 .content-menu__link:focus {
-    color: #131313;
+color: $accent-text-color;
 }
 
 .mob-menu-btn {
@@ -233,8 +234,8 @@ display: none;
     width: 152px;
     height: 42px;
     padding: 12px 34px 12px 34px;
-    background-color: #F8D24E;
-    color: #131313;
+    background-color: $accent-color;
+    color: $accent-text-color;
     border-radius: 10px;
     border: none;
 
@@ -244,19 +245,19 @@ display: none;
 }
 
 .mob-menu-btn__button:hover {
-    background-color: #0A8817;
-    color: #131313;
-    fill: #131313;   
+    background-color: $hover-color;
+    color: $accent-text-color;
+    fill: $accent-text-color;   
 }
 
 .mob-menu-btn__button:focus {
-    background-color: #0A8817;
-    color: #FCFCFC;
-    fill: #FCFCFC;
+    background-color: $hover-color;
+    color: $main-text-color;
+    fill: $main-text-color;
 }
 
 .mob-menu-btn__button:disabled {
-    background-color:  #ABABAB;
-    color: #131313;
-    fill: #131313;
+    background-color: $main-text-color;
+    color: $accent-text-color;
+    fill: $accent-text-color;
 }
