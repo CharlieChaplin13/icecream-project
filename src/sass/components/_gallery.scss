@@ -24,6 +24,7 @@
 .gallery__item {
   position: absolute;
   display: none;
+  pointer-events: none;
 
   border-radius: 20px;
 
