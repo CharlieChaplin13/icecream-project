@@ -42,6 +42,15 @@
 // }
 
 .gallery__img {
-  height: 422px;
   border-radius: 20px;
+
+  &--mob {
+    height: 130px;
+  }
+  &--tab {
+    height: 327px;
+  }
+  &--desk {
+    height: 422px;
+  }
 }
