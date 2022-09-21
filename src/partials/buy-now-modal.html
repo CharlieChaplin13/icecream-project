@@ -1,19 +1,21 @@
 <div class="backdrop is-hidden" data-buy-now-modal>
-  <div class="buy-now-modal read-more-modal">
-    <button
-      type="button"
-      class="read-more-modal__button"
-      data-buy-now-modal-close
-    >
-      <svg width="20" height="20">
+  <div class="modal-window buy-now-modal">
+    <button class="modal__button-close" data-buy-now-modal-close>
+      <svg class="icon" width="12" height="12">
         <use href="./images/icons.svg#close-cross"></use>
       </svg>
     </button>
 
-    <p class="buy-now-modal__title">Buy now</p>
+    <p class="modal__title buy-now-modal__title">Buy now</p>
 
-    <ul class="buy-now-modal__list">
-      <li class="buy-now-modal__item-ice">
+    <div class="buy-now-modal__list">
+      <input
+        type="checkbox"
+        name="ice-coffe"
+        id="ice-coffe"
+        class="buy-now__checkbox"
+      />
+      <label for="ice-coffe" class="buy-now-modal__item-ice">
         <div class="buy-now-modal__item-ice-back"></div>
         <picture class="buy-now-moda__image">
           <source
@@ -32,8 +34,15 @@
         </picture>
 
         <p class="buy-now-moda__text">Ice Cream</p>
-      </li>
-      <li class="buy-now-modal__item-coffee">
+      </label>
+
+      <input
+        type="checkbox"
+        name="ice-cream"
+        id="ice-cream"
+        class="buy-now__checkbox"
+      />
+      <label for="ice-cream" class="buy-now-modal__item-coffee">
         <div class="buy-now-modal__item-coffee-back"></div>
 
         <picture class="buy-now-moda__image">
@@ -50,8 +59,15 @@
         </picture>
 
         <p class="buy-now-moda__text">Ice Coffee</p>
-      </li>
-      <li class="buy-now-modal__item-milk">
+      </label>
+
+      <input
+        type="checkbox"
+        name="milkshake"
+        id="milkshake"
+        class="buy-now__checkbox"
+      />
+      <label for="milkshake" class="buy-now-modal__item-milk">
         <div class="buy-now-modal__item-milk-back"></div>
 
         <picture>
@@ -69,55 +85,33 @@
         </picture>
 
         <p class="buy-now-moda__text">Milkshake</p>
-      </li>
-    </ul>
+      </label>
+    </div>
 
-    <form class="franchise">
-      <ul>
-        <li class="contact-franchise__nametelemaelcontacts">
-          <!-- Franchise заповнення імені  -->
-          <div class="contact-franchise__iconobox">
-            <label for="namecontact"></label>
-            <input
-              type="text"
-              id="namecontact"
-              name="user-name"
-              class="contact-franchise__nametelemaelcontact contact-franchise__nametelemaelcontact--dekor"
-              placeholder="Name"
-              minlength="2"
-              required
-            />
-          </div>
-        </li>
-        <li class="contact-franchise__nametelemaelcontacts">
-          <div class="contact-franchise__iconobox">
-            <!-- Franchise заповнення телефона форма 10 знаків  -->
-            <label for="telcontact"></label>
-            <input
-              type="tel"
-              id="telcontact"
-              name="user-tel"
-              class="contact-franchise__nametelemaelcontact contact-franchise__nametelemaelcontact--dekor"
-              minlength="10"
-              maxlength="10"
-              placeholder="Phone"
-              required
-            />
-          </div>
-        </li>
-        <li class="contact-franchise__nametelemaelcontacts">
-          <!-- <p>Comment</p> -->
-          <div class="-coment">
-            <label for="comentcontact"></label>
-            <textarea
-              name="user-coment"
-              id="comentcontact"
-              class="coment_contacts contact-franchise__coment contact-franchise__coment--dekor"
-              placeholder="Comment"
-            ></textarea>
-          </div>
-        </li>
-      </ul>
+    <form class="buy-now-form">
+      <input
+        type="text"
+        name="name"
+        placeholder="Name"
+        class="input-modal-window buy-now-form__name"
+        required
+        minlength="2"
+      />
+      <input
+        type="text"
+        name="tel"
+        placeholder="Phone"
+        class="input-modal-window buy-now-form__tel"
+        required
+        minlength="10"
+        maxlength="13"
+      />
+      <textarea
+        class="input-modal-window buy-now-form__comment"
+        name="comment"
+        placeholder="Comment"
+      ></textarea>
+      <button type="submit" class="buy-now-form__btn button">Submit</button>
     </form>
   </div>
 </div>
