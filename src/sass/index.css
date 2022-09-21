@@ -2215,6 +2215,17 @@ footer {
     padding: 16px 20px 0;
   }
 }
+.rights .rights::before {
+  display: inline-block;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #E1E1E1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 
 .footer--rights {
   font-weight: 700;
@@ -2244,15 +2255,4 @@ footer {
     line-height: 1.86;
     letter-spacing: 0.02em;
   }
-}
-
-.rights::before {
-  display: inline-block;
-  left: -50%;
-  position: absolute;
-  content: "";
-  background-color: #e1e1e1;
-  height: 2px;
-  top: 0;
-  width: 1000vw;
 }/*# sourceMappingURL=index.css.map */

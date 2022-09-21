@@ -1,85 +1,96 @@
 // Footer styles
-footer{
+footer {
     padding-top: 39px;
     padding-bottom: 62px;
+
     @include tablet {
         padding-top: 40px;
         padding-bottom: 13px;
-        }
-    
-        @include desktop {
+    }
+
+    @include desktop {
         padding-top: 120px;
         padding-bottom: 11px;
-        }
+    }
 }
-.footer__content{
+
+.footer__content {
     @include tablet {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 }
+
 .footer__title {
     margin-bottom: 42px;
 
     @include tablet {
         width: 352px;
     }
+
     @include desktop {
         width: 505px;
     }
 }
-.footer__contacts{
+
+.footer__contacts {
     margin-bottom: 40px;
+
     @include tablet {
         margin-bottom: 56px;
-        }
-    
-        @include desktop {
-            margin-bottom: 60px;
-        }
-}
-.footer-title__pre-title{
-@include font(700, 18px, 1.22, 0.04em);
- text-transform: uppercase;
+    }
 
-@include tablet {
-    @include font(700, 26px, 1.23, 0.04em);
+    @include desktop {
+        margin-bottom: 60px;
+    }
 }
 
-@include desktop {
-    @include font(400, 30px, 1.23, 0.04em);
+.footer-title__pre-title {
+    @include font(700, 18px, 1.22, 0.04em);
+    text-transform: uppercase;
+
+    @include tablet {
+        @include font(700, 26px, 1.23, 0.04em);
+    }
+
+    @include desktop {
+        @include font(400, 30px, 1.23, 0.04em);
+    }
+
+    color: $main-text-color;
+    margin-bottom: 16px;
 }
 
- color: $main-text-color;
-margin-bottom: 16px;
-}
-.footer-title__title{
+.footer-title__title {
     @include font(700, 34px, 1.21, 0.04em);
-    
+
     color: $main-text-color;
     text-transform: uppercase;
-    
-@include tablet {
-    display: flex;
+
+    @include tablet {
+        display: flex;
         @include font(700, 48px, 1.23, 0.06em);
     }
 
     @include desktop {
         @include font(700, 58px, 1.23, 0.06em);
     }
-    
+
 }
+
 .footer__soc {
     margin-bottom: 38px;
 }
-.soc__list{
+
+.soc__list {
     display: flex;
     gap: 30px;
     justify-content: flex-end;
-    
+
 }
-.soc__link{
+
+.soc__link {
     width: 34px;
     height: 34px;
     border-radius: 50%;
@@ -91,28 +102,30 @@ margin-bottom: 16px;
     transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
-    &:focus{
+    &:focus {
         scale: 1.2;
     }
 }
-.soc__icon{
+
+.soc__icon {
     fill: $background-color;
 
     .soc__link:hover &,
-    .soc__link:focus &{
+    .soc__link:focus & {
         fill: $main-text-color;
     }
 }
+
 .footer__phone {
     @include font(700, 12px, 1.86, 0.02em);
 
     @include tablet {
-            @include font(700, 14px, 1.86, 0.02em);
-        }
-    
-        @include desktop {
-            @include font(700, 16px, 1.86, 0.02em);
-        }
+        @include font(700, 14px, 1.86, 0.02em);
+    }
+
+    @include desktop {
+        @include font(700, 16px, 1.86, 0.02em);
+    }
 
 
     color: $accent-text-color;
@@ -120,56 +133,80 @@ margin-bottom: 16px;
     display: flex;
     justify-content: flex-end;
 
-    
+
 }
-.footer__phone--white{
+
+.footer__phone--white {
     color: $main-text-color;
     margin-left: 5px;
 }
-.rights{
+
+.rights {
     padding: 16px 20px 0;
     position: relative;
 
     @include tablet {
-            padding: 16px 20px 0;
-        }
-    
-        @include desktop {
-            padding: 16px 20px 0 ;
-        }
+        padding: 16px 20px 0;
+    }
+
+    @include desktop {
+        padding: 16px 20px 0;
+    }
+
+   
 }
-.footer--rights{
+ .rights::before {
+     display: inline-block;
+     content: '';
+     height: 2px;
+     width: 100%;
+     background-color: #E1E1E1;
+     position: absolute;
+     top: 0;
+
+ }
+
+.footer--rights {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
     text-align: center;
 
     @include font(700, 14px, 1.52, 0.02em);
-    
+
     color: #7A7A7A;
 
     @include tablet {
         @include font(700, 14px, 1.86, 0.02em);
 
-        
 
-            margin-left: auto;
-            margin-right: auto;
-        }
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     @include desktop {
         @include font(700, 12px, 1.86, 0.02em);
 
-        
+
     }
 }
 
-.rights::before {
-  display: inline-block;
-  left: -50%;
-  position: absolute;
-  content: '';
-  background-color: #e1e1e1;
-  height: 2px;
-  top: 0;
-  width: 1000vw;
-}
+// .rights::before {
+//   display: inline-block;
+//   left: -50%;
+//   position: absolute;
+//   content: '';
+//   background-color: #e1e1e1;
+//   height: 2px;
+//   top: 0;
+//   width: 100vw;
+
+// // @include tablet {
+// //     width: 100vw;
+// //     }
+
+// //     @include desktop {
+// //     width: 100vw;
+// //     }
+// }
