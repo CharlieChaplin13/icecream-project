@@ -25,7 +25,7 @@
         content: '';
         width: 131px;
         height: 131px;
-        background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+        background: $card-green-background;
         box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
         border-radius: 50%;
         bottom: -7px;
@@ -48,7 +48,7 @@
     height: 72px;
     align-items: center;
     text-align: center;
-    border: 2px solid #9CBE8F;
+    border: 2px solid $card-green-color;
     border-radius: 40px;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -58,8 +58,8 @@
         content: '';
         width: 43px;
         height: 43px;
-        background: #9CBE8F;
-        border: 2px solid #9CBE8F;
+        background: $card-green-color;
+        border: 2px solid $card-green-color;
         box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
         border-radius: 50%;
         top: -2px;

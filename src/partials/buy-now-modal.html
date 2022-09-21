@@ -1,5 +1,5 @@
 <div class="backdrop is-hidden" data-buy-now-modal>
-  <div class="modal-window buy-now-modal">
+  <div class="modal-window">
     <button class="modal__button-close" data-buy-now-modal-close>
       <svg class="icon" width="12" height="12">
         <use href="./images/icons.svg#close-cross"></use>
@@ -7,88 +7,87 @@
     </button>
 
     <p class="modal__title buy-now-modal__title">Buy now</p>
-
-    <div class="buy-now-modal__list">
-      <input
-        type="checkbox"
-        name="ice-coffe"
-        id="ice-coffe"
-        class="buy-now__checkbox"
-      />
-      <label for="ice-coffe" class="buy-now-modal__item-ice">
-        <div class="buy-now-modal__item-ice-back"></div>
-        <picture class="buy-now-moda__image">
-          <source
-            srcset="
-              ./images/modal/ice-coffe.png    1x,
-              ./images/modal/ice-coffe-2x.png 2x
-            "
-            media="(min-width:1200px)"
-          />
-          <img
-            alt="ice"
-            width="132"
-            height="132"
-            src="./images/modal/ice-coffe.png"
-          />
-        </picture>
-
-        <p class="buy-now-moda__text">Ice Cream</p>
-      </label>
-
-      <input
-        type="checkbox"
-        name="ice-cream"
-        id="ice-cream"
-        class="buy-now__checkbox"
-      />
-      <label for="ice-cream" class="buy-now-modal__item-coffee">
-        <div class="buy-now-modal__item-coffee-back"></div>
-
-        <picture class="buy-now-moda__image">
-          <source
-            srcset="./images/modal/ice-cream.png 1, ./images/modal/ice-cream-2x.png 2x"
-            media="(min-width:1200px)"
-          />
-          <img
-            src="./images/modal/ice-cream.png"
-            alt="ice"
-            width="131"
-            height="131"
-          />
-        </picture>
-
-        <p class="buy-now-moda__text">Ice Coffee</p>
-      </label>
-
-      <input
-        type="checkbox"
-        name="milkshake"
-        id="milkshake"
-        class="buy-now__checkbox"
-      />
-      <label for="milkshake" class="buy-now-modal__item-milk">
-        <div class="buy-now-modal__item-milk-back"></div>
-
-        <picture>
-          <source
-            srcset="./images/modal/milkshake.png 1, ./images/modal/milkshake-2x.png 2x"
-            media="(min-width:1200px)"
-          />
-          <img
-            class="buy-now-moda__image"
-            src="./images/modal/milkshake.png"
-            alt="ice"
-            width="131"
-            height="131"
-          />
-        </picture>
-
-        <p class="buy-now-moda__text">Milkshake</p>
-      </label>
-    </div>
-
     <form class="buy-now-form">
+      <div class="buy-now-modal__list">
+        <input
+          type="checkbox"
+          name="ice-coffe"
+          id="ice-coffe"
+          class="buy-now__checkbox"
+        />
+        <label for="ice-coffe" class="buy-now-modal__item-ice">
+          <div class="buy-now-modal__item-ice-back"></div>
+          <picture class="buy-now-moda__image">
+            <source
+              srcset="
+                ./images/modal/ice-coffe.png    1x,
+                ./images/modal/ice-coffe-2x.png 2x
+              "
+              media="(min-width:1200px)"
+            />
+            <img
+              alt="ice"
+              width="132"
+              height="132"
+              src="./images/modal/ice-coffe.png"
+            />
+          </picture>
+
+          <p class="buy-now-moda__text">Ice Cream</p>
+        </label>
+
+        <input
+          type="checkbox"
+          name="ice-cream"
+          id="ice-cream"
+          class="buy-now__checkbox"
+        />
+        <label for="ice-cream" class="buy-now-modal__item-coffee">
+          <div class="buy-now-modal__item-coffee-back"></div>
+
+          <picture class="buy-now-moda__image">
+            <source
+              srcset="./images/modal/ice-cream.png 1, ./images/modal/ice-cream-2x.png 2x"
+              media="(min-width:1200px)"
+            />
+            <img
+              src="./images/modal/ice-cream.png"
+              alt="ice"
+              width="131"
+              height="131"
+            />
+          </picture>
+
+          <p class="buy-now-moda__text">Ice Coffee</p>
+        </label>
+
+        <input
+          type="checkbox"
+          name="milkshake"
+          id="milkshake"
+          class="buy-now__checkbox"
+        />
+        <label for="milkshake" class="buy-now-modal__item-milk">
+          <div class="buy-now-modal__item-milk-back"></div>
+
+          <picture>
+            <source
+              srcset="./images/modal/milkshake.png 1, ./images/modal/milkshake-2x.png 2x"
+              media="(min-width:1200px)"
+            />
+            <img
+              class="buy-now-moda__image"
+              src="./images/modal/milkshake.png"
+              alt="ice"
+              width="131"
+              height="131"
+            />
+          </picture>
+
+          <p class="buy-now-moda__text">Milkshake</p>
+        </label>
+      </div>
+
       <input
         type="text"
         name="name"
@@ -96,16 +95,27 @@
         class="input-modal-window buy-now-form__name"
         required
         minlength="2"
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        title="Username must be two words separated by space."
       />
+      <span class="form__error"
+        >Username must be two words separated by space.</span
+      >
       <input
         type="text"
         name="tel"
         placeholder="Phone"
         class="input-modal-window buy-now-form__tel"
         required
-        minlength="10"
-        maxlength="13"
+        minlength="18"
+        maxlength="18"
+        pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+        title="This field must contain a phone number in the format +3 (123) 456-78-90"
       />
+      <span class="form__error"
+        >This field must contain a phone number in the format +3 (123)
+        456-78-90</span
+      >
       <textarea
         class="input-modal-window buy-now-form__comment"
         name="comment"

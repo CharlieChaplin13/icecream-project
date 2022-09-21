@@ -1,0 +1,14 @@
+.up-scroll-button {
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: aqua;
+    opacity: 0.5;
+    &:hover,
+    &:focus {
+        background-color: aquamarine;
+        opacity: 1;
+        color:red;
+    }
+}

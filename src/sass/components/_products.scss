@@ -80,7 +80,7 @@
         height: 200px;
         border-radius: 50%;
         top: -97px;
-        background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+        background: $card-green-background;
         box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
     }
 
@@ -102,7 +102,7 @@
         }
 
         &::before {
-            background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+            background: $card-yellow-background;
             box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
         }
     }
@@ -126,7 +126,7 @@
         }
 
         &::before {
-            background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+            background: $card-brown-background;
             box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
         }
     }
