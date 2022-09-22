@@ -101,6 +101,7 @@
     border: none;
     margin-left: auto;
     margin-right: auto;
+    cursor: url(../images/cursor.png), url(../images/cursor-1.cur), default;
 
     //     padding-left: 6px;
     //     cursor: pointer;
@@ -127,6 +128,7 @@
     border: none;
     margin-left: auto;
     margin-right: auto;
+    cursor: url(../images/cursor.png), url(../images/cursor-1.cur), default;
   }
 }
 .nav-btn-icon {
@@ -139,10 +141,12 @@
   // margin-right: 26px;
   background-color: transparent;
   border: none;
+  cursor: url(../images/cursor.png), url(../images/cursor-1.cur), default;
 
   @include tablet {
     margin-right: 32px;
     margin-left: auto;
+    cursor: url(../images/cursor.png), url(../images/cursor-1.cur), default;
     // margin-top: 39px;
   }
 
@@ -192,6 +196,7 @@
   margin-right: 4px;
   background-color: transparent;
   border: none;
+  cursor: url(../images/cursor.png), url(../images/cursor-1.cur), default;
 
   @include tablet {
     display: flex;
@@ -200,6 +205,7 @@
     margin-right: 32px;
     background-color: transparent;
     border: none;
+    cursor: url(../images/cursor.png), url(../images/cursor-1.cur), default;
   }
 }
 
