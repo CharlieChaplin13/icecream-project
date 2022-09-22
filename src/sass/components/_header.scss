@@ -119,15 +119,15 @@
     //   }
 
 
-    &:hover {
-      border: 2px solid $hover-color;
-      // border-color: $hover-color;
-    }
+    // &:hover {
+    //   border: 2px solid $hover-color;
+    //   // border-color: $hover-color;
+    // }
 
-    &:focus {
-      border-color: $hover-color;
-      color: $main-text-color;
-    }
+    // &:focus {
+    //   background-color: $hover-color;
+    //   color: $main-text-color;
+    // }
   }
 
 
@@ -158,17 +158,14 @@
 
 .navigation__button {
   &:hover {
-    border-color: $hover-color;
+    background-color: $hover-color;
   }
   &:focus {
-    border-color: $hover-color;
+    background-color: $hover-color;
     color: $main-text-color;
   }
-  &:disabled {
-    border-color: $disabled-color;
-  }
-}
-  
+} 
+
 .nav-btn-icon {
   margin-left: 7.23px;
   fill: currentColor;
