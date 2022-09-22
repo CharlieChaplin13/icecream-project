@@ -17,7 +17,12 @@
     margin-bottom: 40px;
   }
 }
-
+.buy {
+  top: 10%;
+  @include tablet {
+    top: 50%;
+  }
+}
 .buy-now-modal__item-ice,
 .buy-now-modal__item-coffee,
 .buy-now-modal__item-milk {

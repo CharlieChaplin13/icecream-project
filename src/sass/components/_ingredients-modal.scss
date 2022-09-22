@@ -5,6 +5,10 @@
   min-height: 990px;
   margin: 0 auto;
   justify-content: space-between;
+  top: 10%;
+  @include tablet {
+    top: 70%;
+  }
 }
 .ingredients__close {
   position: absolute;
