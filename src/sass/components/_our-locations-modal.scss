@@ -1,22 +1,8 @@
 // Our locations modal styles
-.map-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border: 2px solid $accent-color;
-  border-radius: 10px;
-  background-color: $main-text-color;
-  display: flex;
-  flex-wrap: wrap;
-  justify-items: center;
-  justify-content: space-between;
 
-  opacity: 1;
-  transform: translate(-50%, -50%);
-}
 
 @media screen and (max-width: 767px) {
-  .map-box--decor {
+  .map-window--decor {
     width: 280px;
     height: 365px;
     padding: 28px 28px;
@@ -41,7 +27,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .map-box--decor {
+  .map-window--decor {
     width: 568px;
     height: 458px;
     padding: 32px 59px;
@@ -58,14 +44,9 @@
     line-height: 1.4;
     max-width: 322px;
     margin-bottom: 32px;
-  }
+    }
 
-  .contact__title {
-    font-size: 20px;
-    line-height: 1.4;
-    max-width: 322px;
-    margin-bottom: 24px;
-  }
+ 
   .submitik-map {
     margin-bottom: 32px;
   }
@@ -89,23 +70,42 @@
 .modal-btn-close {
   
   position: absolute;
-  width: 29px;
-  height: 29px;
-  border-radius: 15px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
   top: 8px;
   right: 8px;
-  background-color: #ffffff;
+  
   justify-content: center;
+  border: none;
+
 }
 
 .modal-btn-close__svgen-close {
   position: absolute;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  transition-duration: 250ms;
-  transition-property: border, fill;
+  transition-duration: 5250ms;
+  transition-property: color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+.modal-btn-close__svgen-close:focus {
+  background: $hover-color;
+  color:  $main-text-color;
+}
+
+.modal-btn-close__svgen-close:hover {
+  background: $hover-color;
+}
+
+
+
+
 
 .submitik-map {
   width: 121px;
@@ -142,10 +142,16 @@
 .submitik-map:hover {
   background: $hover-color;
 }
+
 .submitik-map:focus {
   background: $hover-color;
   color: $main-text-color;
 }
+
 .submitik-map:disabled {
   background: $disabled-color;
+}
+.placeholder {
+  font-family: $font-main;
+  color: $accent-text-color;
 }

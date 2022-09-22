@@ -35,7 +35,12 @@
                placeholder="Name"
                minlength="2"
                required
+               
+               title="Username must be two words separated by space."
              />
+             <span class="form__error"
+               >Enter a username.</span
+             >             
            </div>
          </li>
          <li class="contact-franchise__nametelemaelcontacts">
@@ -47,11 +52,17 @@
                id="telcontact"
                name="user-tel"
                class="contact-franchise__nametelemaelcontact contact-franchise__nametelemaelcontact--dekor"
-               minlength="10"
-               maxlength="10"
+               minlength="18"
+               maxlength="18"
                placeholder="Phone"
-               required
-             />
+               required        
+               pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+               title="This field must contain a phone number in the format +3 (123) 456-78-90"
+               />
+               <span class="form__error"
+               >Phone number in the format +3 (123)
+                456-78-90</span
+                >             
           </div>
          </li>
          <li class="contact-franchise__nametelemaelcontacts">
@@ -66,7 +77,8 @@
                placeholder="Email"
                minlength="5"
                required
-             />               
+             /> 
+             <span class="form__error"> E-Mail in the format example@site.com</span>              
            </div>
          </li>
          <li class="contact-franchise__nametelemaelcontacts">
