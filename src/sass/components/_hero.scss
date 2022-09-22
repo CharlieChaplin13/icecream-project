@@ -300,6 +300,7 @@
 .hero__dots {
   position: absolute;
   width: 100vw;
+  min-width: 320px;
   left: 0;
   bottom: 0;
   pointer-events: none;
