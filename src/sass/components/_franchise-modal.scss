@@ -50,14 +50,22 @@
  }
  
  /* Вікна для заповнення */
- 
+ .contact-franchise__iconobox{
+  display: inline-block;
+ }
  .contact-franchise__coment,
  .contact-franchise__nametelemaelcontact {
-   display: inline-flexbox;
+   display: inline-block;
    margin: 0;
    background: rgba(248, 210, 78, 0.1);
    border: 1px solid $background-color;
    border-radius: 10px;
+   &::placeholder {
+    font-size: 14px;
+    line-height: 140%;
+    font-family: $font-main;
+    color: $accent-text-color;
+  }
  }
  
  /* падінг авто по щоб було поцентру */
@@ -89,13 +97,27 @@
  }
  
  .modal-btn-close__svgen-close {
-   position: absolute;
-   top: 50%;
-   transform: translate(-50%, -50%);
-   transition-duration: 250ms;
-   transition-property: border, fill;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
- }
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition-duration: 5250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.modal-btn-close__svgen-close:focus {
+  background: $hover-color;
+  color:  $main-text-color;
+}
+
+.modal-btn-close__svgen-close:hover {
+  background: $hover-color;
+}
+
  
  /* відправка інформацій на регенстрацію */
  
@@ -135,7 +157,7 @@
    }
    .contact--decor {
      width: 280px;
-     height: 674px;
+     
      padding: 28px;
    }
    .contact__text {
@@ -164,7 +186,7 @@
    }
    .contact--decor {
      width: 568px;
-     height: 668px;
+    
      padding: 32px 59px;
    }
    .contact__text {
@@ -197,4 +219,15 @@
    {
    background: $disabled-color;
    }
- 
+
+  .contact-franchise__iconobox{
+    position: relative;
+  }
+  .form__error {   
+    margin-top: -12px;
+    margin-bottom:3px;
+    padding-left: 14px;
+    
+    @media screen and (min-width: 768px) {
+      margin-top: -16px;
+    }}
