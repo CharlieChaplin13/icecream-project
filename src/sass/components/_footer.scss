@@ -142,13 +142,15 @@ margin-bottom: 16px;
 }
 
 .rights::before {
-    display: inline-block;
+    text-align: center;
     content: '';
     height: 2px;
-    width: 100%;
+   width: 100%;
     background-color: #E1E1E1;
     position: absolute;
     top: 0;
+    right:0;
+
 
 }
 
