@@ -69,14 +69,14 @@
     display: flex;
     margin-left: auto;
     margin-top: 24px;
-    margin-right: 32px;
+    // margin-right: 32px;
     margin-left: 0;
   }
 
   @include desktop {
     display: flex;
     margin-left: auto;
-    margin-right: 16px;
+    // margin-right: 16px;
     margin-top: 28px;
   }
 }
