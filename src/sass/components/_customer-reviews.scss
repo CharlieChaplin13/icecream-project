@@ -75,6 +75,7 @@
 
 .review__slider {
   width: 100%;
+  outline: none;
 }
 
 .review__img {
@@ -98,6 +99,7 @@
   text-align: center;
   height: 256px;
   padding: 34px 39px;
+  cursor: pointer;
 
   background-color: $background-color;
   border-radius: 10px;
