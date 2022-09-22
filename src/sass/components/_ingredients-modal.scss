@@ -131,6 +131,16 @@
   margin: 0 auto;
   border: transparent;
   background-color: $accent-color;
+  &:hover {
+    background-color: $hover-color;
+  }
+  &:focus {
+    background-color: $hover-color;
+    outline: $hover-color;
+  }
+  &:disabled {
+    background-color: $disabled-color;
+  }
 }
 @media screen and (min-width: 380px) {
   .ingredients-nutrients__list {
