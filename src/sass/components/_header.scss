@@ -1,99 +1,97 @@
-
-
 .header {
-    position: relative;
-    // position: fixed;
-    // top: 0;
-    // left: 0;
-    // background-color: $background-color;
-    // z-index: 100;
+  position: relative;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // background-color: $background-color;
+  // z-index: 100;
 }
 
 .header-container {
-    display: flex;
+  display: flex;
 }
 
 .header-logo {
-    // margin-top: 12px;
-    // margin-left: 22.35px;
+  // margin-top: 12px;
+  // margin-left: 22.35px;
 
-    @include tablet {
+  @include tablet {
     // margin-top: 20px;
     // margin-left: 32px;
-    }
-    @include desktop {
+  }
+  @include desktop {
     margin-right: 269px;
-    }
+  }
 }
 
 .navigation {
-display: none;
+  display: none;
 
-    @include tablet {
+  @include tablet {
     display: none;
-    }
+  }
 
-    @include desktop {
+  @include desktop {
     display: inline-flex;
     align-items: center;
     gap: 25px;
-    }
+  }
 }
 
 .navigation__list {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    margin-top: 40px;
-    }
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 40px;
+}
 
 .navigation__link {
-    color: $main-text-color;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.25;
+  color: $main-text-color;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
 }
 
 .navigation__link:hover,
 .navigation__link:focus {
-    color: $accent-color;
+  color: $accent-color;
 }
 
 .menu-logo {
-    display: flex;
-    margin-top: 12px;
-    margin-left: 31px;
+  display: flex;
+  //   margin-top: 12px;
+  //   margin-left: 31px;
 
-    @include tablet {
-        display: flex;
-        margin-top: 20px;
-        margin-left: 32px;  
-    }
+  @include tablet {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 32px;
+  }
 }
 .menu-btn {
-    display: none;
+  display: none;
 
-    @include tablet {
+  @include tablet {
     display: flex;
     margin-left: auto;
     margin-top: 24px;
     margin-right: 32px;
     margin-left: 0;
-    }
+  }
 
-    @include desktop {
+  @include desktop {
     display: flex;
     margin-left: auto;
     margin-right: 16px;
     margin-top: 28px;
-    }
+  }
 }
 
 .navigation__button {
-    display: none;
+  display: none;
 
-    @include tablet {
+  @include tablet {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,69 +115,65 @@ display: none;
     //     margin-right: auto;
     //     margin-top: 20px;
     //   }
-    }
+  }
 
-    @include desktop {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        // margin-top: 24px;
-        font-size: 14px;
-        font-weight: 600;
-        width: 152px;
-        height: 42px;
-        padding: 12px 34px 12px 34px;
-        background-color: $accent-color;
-        color: $accent-text-color;
-        fill: $accent-text-color;
-        border-radius: 10px;
-        border: none;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  @include desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // margin-top: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    width: 152px;
+    height: 42px;
+    padding: 12px 34px 12px 34px;
+    background-color: $accent-color;
+    color: $accent-text-color;
+    fill: $accent-text-color;
+    border-radius: 10px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .nav-btn-icon {
-    margin-left: 7.23px;
+  margin-left: 7.23px;
 }
 
 .menu-open-btn {
+  margin-left: auto;
+  margin-top: 26px;
+  // margin-right: 26px;
+  background-color: transparent;
+  border: none;
+
+  @include tablet {
+    margin-right: 32px;
     margin-left: auto;
-    margin-top: 26px;
-    // margin-right: 26px;
-    background-color: transparent;
-    border: none;
+    // margin-top: 39px;
+  }
 
-    @include tablet {
-        margin-right: 32px;
-        margin-left: auto;
-        // margin-top: 39px;
-    }
-
-    @include desktop {
-        display: none;
-    }
+  @include desktop {
+    display: none;
+  }
 }
 
-
 .content-menu {
-    position: absolute;
-    top: 0;
-    z-index: 5;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: $background-color;
-    text-align: center;
-    align-items: center;
-    font-weight: 700;
-    color: $main-text-color;
-    transform: translateX(0);
-    opacity: 1;
-    transition: transform 400ms linear, opacity 400ms linear;
-    
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $background-color;
+  text-align: center;
+  align-items: center;
+  font-weight: 700;
+  color: $main-text-color;
+  transform: translateX(0);
+  transition: transform 400ms linear;
 
-
-    @include tablet { 
+  @include tablet {
     position: absolute;
     background-color: $background-color;
     top: 0%;
@@ -189,110 +183,104 @@ display: none;
     font-weight: 700;
     color: $main-text-color;
     transform: translateX(0%);
-    opacity: 1;
-    transition: transform 400ms linear, opacity 400ms linear;
-    }
+    transition: transform 400ms linear;
+  }
 
-
-    @include desktop {
-        display: none;
-    }
+  @include desktop {
+    display: none;
+  }
 }
 
 .menu-close-btn {
+  display: flex;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-right: 4px;
+  background-color: transparent;
+  border: none;
+
+  @include tablet {
     display: flex;
     margin-left: auto;
-    margin-top: 16px;
-    margin-right: 20px;
+    margin-top: 32px;
+    margin-right: 32px;
     background-color: transparent;
     border: none;
-
-    @include tablet {
-        display: flex;
-        margin-left: auto;
-        margin-top: 32px;
-        margin-right: 32px;
-        background-color: transparent;
-        border: none; 
-    }
+  }
 }
 
 .content-menu__navigation {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .content-menu__link {
-    font-family: $font-main;
-    margin-top: 32px;
-    font-size: 32px;
-    font-weight: 700;
-    color: $main-text-color;
+  font-family: $font-main;
+  margin-top: 32px;
+  font-size: 32px;
+  font-weight: 700;
+  color: $main-text-color;
 
-    @include tablet {
-        margin-top: 40px;
-        font-size: 48px;
-    }
+  @include tablet {
+    margin-top: 40px;
+    font-size: 48px;
+  }
 }
 
 .content-menu__link:hover,
 .content-menu__link:focus {
-color: $accent-text-color;
+  color: $accent-text-color;
 }
 
 .mob-menu-btn {
-    display: flex;
-    justify-content: center;
-    margin-top: 111px;
-    padding-bottom: 63px;
+  display: flex;
+  justify-content: center;
+  margin-top: 111px;
+  padding-bottom: 63px;
 }
 
 .mob-menu-btn__button {
-    display: flex;
-    margin-left: auto;
-    font-size: 14px;
-    font-weight: 600;
-    width: 152px;
-    height: 42px;
-    // padding: 12px 34px 12px 34px;
-    background-color: $accent-color;
-    color: $accent-text-color;
-    fill: $accent-text-color;
-    border-radius: 10px;
-    border: none;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  margin-left: auto;
+  font-size: 14px;
+  font-weight: 600;
+  width: 152px;
+  height: 42px;
+  // padding: 12px 34px 12px 34px;
+  background-color: $accent-color;
+  color: $accent-text-color;
+  fill: $accent-text-color;
+  border-radius: 10px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  align-items: center;
+  justify-content: center;
 
-    @include tablet {
-        display: none;
-    }
+  @include tablet {
+    display: none;
+  }
 }
 
 .mob-menu-btn__button:hover {
-    background-color: $hover-color;
-    color: $accent-text-color;
-    fill: $accent-text-color;   
+  background-color: $hover-color;
+  color: $accent-text-color;
+  fill: $accent-text-color;
 }
 
 .mob-menu-btn__button:focus {
-    background-color: $hover-color;
-    color: $main-text-color;
-    fill: $main-text-color;
+  background-color: $hover-color;
+  color: $main-text-color;
+  fill: $main-text-color;
 }
 
 .mob-menu-btn__button:disabled {
-    background-color: $main-text-color;
-    color: $accent-text-color;
-    fill: $accent-text-color;
+  background-color: $main-text-color;
+  color: $accent-text-color;
+  fill: $accent-text-color;
 }
 
 .content-menu.is-hidden {
-    transform: translateX(100%);
-    opacity: 0;
-    transition: transform 400ms linear, opacity 400ms linear;
-    
+  transform: translateX(100%);
+  transition: transform 400ms linear;
 }
-
-
