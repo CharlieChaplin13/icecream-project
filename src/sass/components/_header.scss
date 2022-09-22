@@ -88,7 +88,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // margin-top: 24px;
     font-size: 14px;
     font-weight: 600;
     width: 152px;
@@ -101,13 +100,18 @@
     border: none;
     margin-left: auto;
     margin-right: auto;
+    cursor: url(../images/cursor.png), url(../images/cursor-1.cur), default;
+    &:hover {
+      border-color: $hover-color;
+    }
+    &:focus {
+      border-color: $hover-color;
+      color: $main-text-color;
+    }
+    &:disabled {
+      border-color: $disabled-color;
+    }
 
-    //     padding-left: 6px;
-    //     cursor: pointer;
-    //     margin-left: auto;
-    //     margin-right: auto;
-    //     margin-top: 20px;
-    //   }
   }
 
   @include desktop {
@@ -127,6 +131,17 @@
     border: none;
     margin-left: auto;
     margin-right: auto;
+    cursor: url(../images/cursor.png), url(../images/cursor-1.cur), default;
+    &:hover {
+      border-color: $hover-color;
+    }
+    &:focus {
+      border-color: $hover-color;
+      color: $main-text-color;
+    }
+    &:disabled {
+      border-color: $disabled-color;
+    }
   }
 }
 .nav-btn-icon {
@@ -136,14 +151,34 @@
 .menu-open-btn {
   margin-left: auto;
   margin-top: 26px;
-  // margin-right: 26px;
   background-color: transparent;
   border: none;
+  cursor: url(../images/cursor.png), url(../images/cursor-1.cur), default;
+    &:hover {
+      border-color: $hover-color;
+    }
+    &:focus {
+      border-color: $hover-color;
+      color: $main-text-color;
+    }
+    &:disabled {
+      border-color: $disabled-color;
+    }
 
   @include tablet {
     margin-right: 32px;
     margin-left: auto;
-    // margin-top: 39px;
+    cursor: url(../images/cursor.png), url(../images/cursor-1.cur), default;
+    &:hover {
+      border-color: $hover-color;
+    }
+    &:focus {
+      border-color: $hover-color;
+      color: $main-text-color;
+    }
+    &:disabled {
+      border-color: $disabled-color;
+    }
   }
 
   @include desktop {
@@ -192,6 +227,17 @@
   margin-right: 4px;
   background-color: transparent;
   border: none;
+  cursor: url(../images/cursor.png), url(../images/cursor-1.cur), default;
+    &:hover {
+      border-color: $hover-color;
+    }
+    &:focus {
+      border-color: $hover-color;
+      color: $main-text-color;
+    }
+    &:disabled {
+      border-color: $disabled-color;
+    }
 
   @include tablet {
     display: flex;
@@ -200,6 +246,17 @@
     margin-right: 32px;
     background-color: transparent;
     border: none;
+    cursor: url(../images/cursor.png), url(../images/cursor-1.cur), default;
+    &:hover {
+      border-color: $hover-color;
+    }
+    &:focus {
+      border-color: $hover-color;
+      color: $main-text-color;
+    }
+    &:disabled {
+      border-color: $disabled-color;
+    }
   }
 }
 
